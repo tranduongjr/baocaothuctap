@@ -1,5 +1,5 @@
 # Giới thiệu về Github
-Khi tham gia một dự án nào đấy thì việc phải làm việc với nhiều người là điều thường thấy. Kể cả làm việc một mìn thì việc quản lý source là vô cùng qua trọng
+Khi tham gia một dự án nào đấy thì việc phải làm việc với nhiều người là điều thường thấy. Kể cả làm việc một mìn thì việc quản lý source là vô cùng quan trọng
 
 Github là một dịch vụ nổi tiếng cung cấp kho lưu trữ mã nguồn Git cho các dự án phần mềm. Github có đầy đủ những tính năng của Git như: 
 
