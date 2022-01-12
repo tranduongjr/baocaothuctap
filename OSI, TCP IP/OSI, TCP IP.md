@@ -134,7 +134,10 @@ Gói IP sẽ được kiểm tra bởi tất cả các thiết bị tầng mạn
 
 **Ipv4**
 
+
 IPv4 là giao thức truyền thông chính cho lớp mạng.
+
+<img src="img/5.png">
 
 Tiêu đề mạng có nhiều mục đích:
 
@@ -156,6 +159,7 @@ IPv4 có ba hạn chế chính:
 - Tăng độ phức tạp của mạng: NAT được coi là giải pháp tạm thời và tạo ra các vấn đề trên mạng như một tác dụng phụ của việc thao tác địa chỉ tiêu đề mạng. NAT gây ra sự cố về độ trễ và khắc phục sự cố
 
 **Ipv6**
+
 IPv6 khắc phục những hạn chế của IPv4.
 
 Những cải tiến mà IPv6 cung cấp:
@@ -164,8 +168,6 @@ Những cải tiến mà IPv6 cung cấp:
 - Cải thiện xử lý gói: tiêu đề đơn giản hóa với ít trường hơn
 - Loại bỏ nhu cầu về NAT: vì có một lượng lớn địa chỉ, không cần sử dụng địa chỉ riêng tư trong nội bộ và được ánh xạ tới một địa chỉ công cộng được chia sẻ
 
-<img src="img/5.png">
-
 Tiêu đề IPv6 được đơn giản hóa, nhưng không nhỏ hơn.
 
 Tiêu đề được cố định ở độ dài 40 Byte hoặc octet.
@@ -173,6 +175,8 @@ Tiêu đề được cố định ở độ dài 40 Byte hoặc octet.
 Một số trường IPv4 đã bị xóa để cải thiện hiệu suất:
 
 Gói IPv6 cũng có thể chứa các tiêu đề mở rộng (EH).
+
+<img src="img/6.png">
 
 Đặc điểm của tiêu đề EH:
 
@@ -196,8 +200,6 @@ Tại tầng này, dữ liệu truyền đi và nhận về sẽ được kiểm
 Tầng này tạo ra và duy trì một phiên cho quá trình truyền tải dữ liệu giữa hai thiết bị. Nó chịu trách nhiệm cho việc đóng, mở luồng cho quá trình giao tiếp giữa 2 thiết bị với nhau, đảm bảo rằng phiên mở đủ lâu để dữ liệu có thể truyền tải hết và đóng đủ nhanh để tránh lãng phí tài nguyên.
 
 Tầng phiên còn đánh dấu điểm hoàn thành. Ví dụ khi truyền 1 file 10gb dữ liệu. Sau mỗi 1gb được truyền đi thì sẽ được đánh dấu điểm hoàn thành tại đó. Nên khi có sự cố đường truyền tại điểm 5gb thì khi có kết nối lại sẽ tiếp tục truyền từ điểm 5gb đến khi truyền hết 10gb.
-
-<img src="img/6.png">
 
 
 ### f, Tầng trình bày (Presentation Layer).
