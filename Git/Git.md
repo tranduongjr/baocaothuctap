@@ -66,7 +66,7 @@ sau đó lựa chọn chức năng Sign in (nếu đã có tài khoản thì b�
 ![Screenshot 2022-01-10 113147](https://user-images.githubusercontent.com/97416839/148719170-5d8f727e-8ae8-4780-8541-94510be37587.png)
 
 Nếu bạn chưa có tài khoản bạn có thể lựa chọn vào create an account để tạo tài khoản.tại đó bạn điền các thông tin để đăng ký tài khoản bao gồm gmail, username, password như yêu cầu. Sau đó hoàn thành quá trình đăng ký tài khoản và bạn có thể Login 
-
+# 2. Hướng dẫn tạo Respository và đưa về Local Respository
 **Tạo Respository**
 
 ![Screenshot 2022-01-10 125157](https://user-images.githubusercontent.com/97416839/148723355-3443e324-99aa-400c-94b6-e50b8d943c23.png)
@@ -86,6 +86,8 @@ Nếu bạn chưa có tài khoản bạn có thể lựa chọn vào create an a
 ![Screenshot_4](https://user-images.githubusercontent.com/97416839/148920079-5f88ae5f-0a9f-406d-bd31-4ae41929f271.png)
 
 Vậy là ta đã thực hiện thành công kết nối từ Respository từ Server và Local Respository. Từ đây ta có thể thao tác dữ liệu tại Github Desktop và có thể đưa dữ liệu từ GitHub Desktop lên Server
+
+# 3. Hướng dẫn sử dụng GitHub Desk để thao tác qua lại giữa Local Respository và Git Server.
 
 **Đưa dữ liệu vào local Respository đã tạo**
 
