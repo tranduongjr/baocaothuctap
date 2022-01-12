@@ -91,9 +91,7 @@ Từ 240.0.0.0 trờ đi và được dùng cho mục đích dự phòng.
 240-255: Địa chỉ lớp E
 
 ## 1.3. Phân Loại
-
-
-
+public và private
 ## 1.4 Cách chia địa chỉ IPv4
 # 2. Tổng quan về IPv6
 ## 2.1. Chức năng 
