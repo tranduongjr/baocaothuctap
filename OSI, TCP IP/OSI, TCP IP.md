@@ -1,5 +1,4 @@
-# 1. Tổng quan về các mô hình.
-## 1.1. Mô Hình OSI và TCP/IP
+# 1. Tổng quan về mô hình OSI và TCP/IP
 
   Trong mạng máy tính, để truyền tải dữ liệu giữa các người dùng với nhau thì cần có một phương pháp nào đó mang tính hệ thống. Phương pháp này sẽ giúp truyền tải dữ liệu theo quy tắc nhất định, tạo điều kiện cho dữ liệu truyền đi trên môi trường mạng một cách mượt mà, có hệ thống. Mô hình OSI và TCP/IP là những mô hình phổ biến nhất hiện nay.
 
@@ -27,12 +26,12 @@ Nếu dữ liệu không bị lỗi, tầng Data Link đọc và thông dịch t
 
 Tầng Data link gỡ bỏ “header” và “trailer”, sau đó gửi phần dữ liệu còn lại lên tầng Internet.
 
-### 1.1.1. Mô hình OSI.
+## 1.1. Mô hình OSI.
   Mô hình OSI (Open Systems Interconnection) là mô hình giúp kết nối giữa các thiết bị Internet trên toàn cầu. Mô hình này có kiến trúc phân tầng, gồm 7 tầng với những chức năng riêng biệt của từng tầng như mô hình sau: 
 
 ![osi](https://user-images.githubusercontent.com/97416839/148745010-b22a1743-c9bc-43f8-aa71-33db19bcd959.png)
 
-#### a, Tầng vật lý (Physical Layer).
+### a, Tầng vật lý (Physical Layer).
 
 Trước khi bất kỳ giao tiếp mạng nào có thể xảy ra, kết nối vật lý với mạng cục bộ phải được thiết lập.
 
@@ -59,7 +58,7 @@ Việc 'mã hóa' này cung cấp các mẫu có thể dự
 
 **Tóm lại** : Tầng này đảm bảo các vấn đề về các thiết bị vật lý liên quan tới quá trình định tuyến mạng. Xác định các chức năng, thủ tục về điện, cơ, quang để kích hoạt, đưa dữ liệu về dạng bit 0, 1, đảm bảo cho quá trình truyền tải dữ liệu được hiệu quả nhất. Ở tầng này thì dữ liệu được truyền đi dưới dạng bit 0 và 1.
 
-#### b, Tầng liên kết dữ liệu (Data Link Layer).
+### b, Tầng liên kết dữ liệu (Data Link Layer).
 
 Đáp ứng các nhu cầu về tầng mạng và phát sinh các yêu cầu phục vụ gửi tới tầng vật lý. Đảm bảo truyền tải các khung dữ liệu (Frame) giữa hai máy tính có đường truyền vật lý nối trực tiếp với nhau là điều mà chúng thực hiện. Ngoài ra nó còn cài đặt cơ chế phát hiện và xử lý lỗi dữ liệu nhận.
 
@@ -106,7 +105,7 @@ Lượng thông tin điều khiển được mang theo trong khung thay đổi t
 |Error Detection|Được dùng để xác định lỗi đường truyền|
 
 
-#### c, Tầng mạng (Network Layer).
+### c, Tầng mạng (Network Layer).
 
 Đáp ứng các nhu cầu về tầng vận chuyển. Tầng mạng đảm nhiệm việc truyền các gói tin (packet) giữa hai máy tính bất kỳ trong mạng máy tính.
 
@@ -184,7 +183,7 @@ Gói IPv6 cũng có thể chứa các tiêu đề mở rộng (EH).
 
 Không giống như IPv4, bộ định tuyến không phân mảnh các gói IPv6
 
-#### d, Tầng vận chuyển (Transport Layer).
+### d, Tầng vận chuyển (Transport Layer).
 
 Vai trò của chúng là phân mảnh các gói tin có kích thước lớn khi gửi và tập hợp chúng khi nhận, quá trình phân mảnh khi gửi và nhận đảm bảo tính toàn vẹn cho dữ liệu (không bị mất mát, không lặp và đúng thứ tự).
 
@@ -192,7 +191,7 @@ Vai trò của chúng là phân mảnh các gói tin có kích thước lớn kh
 
 Tại tầng này, dữ liệu truyền đi và nhận về sẽ được kiểm soát luồng và kiểm soát lỗi để đảm bảo dữ liệu truyền đi được chính xác và không quá tải cho bên nhận.
 
-#### e, Tầng phiên (Session).
+### e, Tầng phiên (Session).
 
 Tầng này tạo ra và duy trì một phiên cho quá trình truyền tải dữ liệu giữa hai thiết bị. Nó chịu trách nhiệm cho việc đóng, mở luồng cho quá trình giao tiếp giữa 2 thiết bị với nhau, đảm bảo rằng phiên mở đủ lâu để dữ liệu có thể truyền tải hết và đóng đủ nhanh để tránh lãng phí tài nguyên.
 
@@ -201,12 +200,12 @@ Tầng phiên còn đánh dấu điểm hoàn thành. Ví dụ khi truyền 1 fi
 <img src="img/6.png">
 
 
-#### f, Tầng trình bày (Presentation Layer).
+### f, Tầng trình bày (Presentation Layer).
 
   Đáp ứng các yêu cầu của tầng ứng dụng như phiên dịch, giải mã, mã hóa và nén dữ liệu trước khi đưa xuống tầng phiên.
   
   Tại tầng này, dữ liệu được phiên dịch thành ngôn ngữ mà ứng dụng có thể hiểu được
-#### g, Tầng ứng dụng.
+### g, Tầng ứng dụng.
 
   Là tầng đầu tiên của mô hình OSI, tầng này cung cấp giao diện cũng như các thao tác dữ liệu giúp người dùng tương tác trực tiếp với ứng dụng. Thông qua các phần mềm sẽ giúp cho người dùng truy cập các thông tin và dữ liệu trên mạng. Một số giao thức hoạt động tại tầng này như HTTP, FTP, POP, IMAP, SMTP, SNMP,TCP, DNS,.... Một số ứng dụng về tầng này như Web, Mail,...
 
@@ -234,7 +233,7 @@ Khi người dùng A muốn gửi dữ liệu cho người dùng B :
 - Tầng trình diễn sẽ chuyển đổi các định dạng dữ liệu sao cho phù hợp rồi đưa tới tầng ứng dụng.
 - Tầng ứng dụng tiến hành xử lý và gỡ bỏ Header cuối cùng. Khi đó B nhận được thông điệp mà A gửi tới.
 
-### 1.1.2. Mô hình TCP/IP.
+## 1.2. Mô hình TCP/IP.
 Mô hình TCP/IP (Transmission Control Protocol/Internet Protocol) là giao thức truyền thông được sử dụng để kết nối các thiết bị với nhau thông qua mạng Internet.
 Bộ giao thức TCP/IP hoạt động như một lớp trìu tượng giữa các ứng dụng Internet và hạ tầng Router/Switch.
 
@@ -242,15 +241,15 @@ Bộ giao thức TCP/IP hoạt động như một lớp trìu tượng giữa c�
 
 TCP/IP là sự kết hợp của 2 giao thức là TCP (Giao thức truyền vận) đóng vai trò kiểm tra và đảm bảo sự an toàn của mỗi gói tin khi đi qua mỗi trạm. Trong quá trình này, nếu giao thức TCP nhận được gói tin bị lỗi thì một tín hiệu được truyền đi và yêu cầu hệ thống gửi lại một gói tin khác. Và giao thức IP (Giao thức liên mạng) cho phép các gói tin được gửi đến đích định sẵn bằng cách gán thông tin đường dẫn cho các gói tin để gói tin có thể đến được đích đã định sẵn ban đầu.
 Mô hình TCP/IP gồm 4 tầng:
-#### a, Tầng ứng dụng (Application)
+### a, Tầng ứng dụng (Application)
 Đây là lớp giao tiếp trên cùng của mô hình. Đúng với tên gọi, tầng Ứng dụng đảm nhận vai trò giao tiếp dữ liệu giữa 2 máy khác nhau thông qua các dịch vụ mạng khác nhau (duyệt web, chat, gửi email, một số giao thức trao đổi dữ liệu: HTTP, SMTP, SSH, FTP,...)
 Các dữ liệu khi tới tầng này sẽ được định dạng để kết nối theo kiểu Byte nối Byte. Các thông tin định tuyến tại đây sẽ giúp xác định đúng đường đi của một gói tin.
-#### b, Tầng giao vận (Transpot Layer).
+### b, Tầng giao vận (Transpot Layer).
 Chức năng chính của tầng 3 là xử lý vấn đề giao tiếp giữa các máy chủ trong cùng một mạng hoặc khác mạng được kết nối với nhau thông qua bộ định tuyến. Tại đây dữ liệu sẽ được phân đoạn, mỗi đoạn sẽ không bằng nhau nhưng kích thước phải nhỏ hơn 64KB. Cấu trúc đầy đủ của một Segment lúc này là Header chứa thông tin điều khiển và sau đó là dữ liệu.
 
 Trong tầng này còn bao gồm 2 giao thức cốt lõi là TCP và UDP.
 
-##### b.1. Giao thức TCP:
+#### b.1. Giao thức TCP:
 
 TCP là giao thức truyền tải hướng kết nối (connection-oriented), nghĩa là phải thực hiện thiết lập kết nối với đầu xa trước khi thực hiện truyền dữ liệu. Tiến trình thiết lập kết nối ở TCP được gọi là tiến trình bắt tay 3 bước (threeway handshake).
     
@@ -264,7 +263,7 @@ Hỗ trợ cơ chế full-duplex ( truyền và nhận dữ liệu cùng một l
     
 Phục hồi dữ liệu bị mất trên đường truyền ( A gửi B mà không thấy xác nhận sẽ gửi lại) .
     
-##### b.2. Giao thức UDP:
+#### b.2. Giao thức UDP:
 
 Ngược lại với giao thức TCP thì UDP là giao thức truyền tải hướng không kết nối (connectionless). Nó sẽ không thực hiện thao tác xây dựng kết nối trước khi truyền dữ liệu mà thực hiện truyền ngay lập tức khi có dữ liệu cần truyền (kiểu truyền best effort) => truyền tải rất nhanh cho dữ liệu của lớp ứng dụng.
     
@@ -282,7 +281,7 @@ Ví dụ, bạn đang xem phát video trực tiếp, thường được phát b�
 
 Điều này hoạt động tương tự trong các trò chơi trực tuyến. Nếu bạn bỏ lỡ một số gói tin UDP, nhân vật người chơi có thể dịch chuyển trên bản đồ khi bạn nhận gói tin UDP mới. Việc bỏ qua sửa lỗi của TCP sẽ giúp tăng tốc kết nối trò chơi và giảm độ trễ
 
-##### b.3. So sánh phân biệt TCP và UDP
+#### b.3. So sánh phân biệt TCP và UDP
 
 *Giống nhau*
 Cả 2 giao thức đều gửi dữ liệu qua Internet dưới dạng gói.
@@ -302,13 +301,13 @@ Cả 2 giao thức đều gửi dữ liệu qua Internet dưới dạng gói.
 
 => Tùy thuộc vào yêu cầu của từng ứng dụng, hầu hết các ứng dụng muốn sửa lỗi và phát triển hơn thì sử dụng TCP, TCP tốt nhất cho web, truyền file,mail, SSH,... Một số ứng dụng cần tốc độ và giảm chi phí thì sử dụng UDP như VPN, phát video trực tuyến, phát sóng trực tuyến, chơi game,... Vì tính an toàn, đảm bảo truyền dữ liệu, tốc độ truyền dữ liệu bây giờ không còn là vấn đề ảnh hưởng nên TCP là giao thức được sử dụng phổ biến nhất trên Internet. 
 
-#### c, Tầng mạng (Network Layer)
+### c, Tầng mạng (Network Layer)
 
 Gần giống như tầng mạng của mô hình OSI. Tại đây, nó cũng được định nghĩa là một giao thức chịu trách nhiệm truyền tải dữ liệu một cách logic trong mạng. Các phân đoạn dữ liệu sẽ được đóng gói (Packets) với kích thước mỗi gói phù hợp với mạng chuyển mạch mà nó dùng để truyền dữ liệu. Lúc này, các gói tin được chèn thêm phần Header chứa thông tin của tầng mạng và tiếp tục được chuyển đến tầng tiếp theo. Các giao thức chính trong tầng là IP, ICMP và ARP.
 
   ![tcp ip](https://user-images.githubusercontent.com/97416839/148900091-cfc99224-bd40-4960-bd74-58e6f92edfc9.png)
 
-#### d, Tầng vật lý (Physical Layer).
+### d, Tầng vật lý (Physical Layer).
 
 Là sự kết hợp giữa tầng Vật lý và tầng liên kết dữ liệu của mô hình OSI. Chịu trách nhiệm truyền dữ liệu giữa hai thiết bị trong cùng một mạng. Tại đây, các gói dữ liệu được đóng vào khung (gọi là Frame) và được định tuyến đi đến đích đã được chỉ định ban đầu.
 
