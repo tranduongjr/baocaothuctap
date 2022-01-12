@@ -156,7 +156,7 @@ Tiêu đề mạng có nhiều mục đích:
 IPv4 có ba hạn chế chính:
 - Sự cạn kiệt địa chỉ IPv4
 - Thiếu kết nối end-to-end: Để IPv4 tồn tại lâu dài, địa chỉ riêng tư và NAT đã được tạo ra. Điều này đã kết thúc các giao tiếp trực tiếp với việc giải quyết công khai.
-- Tăng độ phức tạp của mạng: NAT được coi là giải pháp tạm thời và tạo ra các vấn đề trên mạng như một tác dụng phụ của việc thao tác địa chỉ tiêu đề mạng. NAT gây ra sự cố về độ trễ và khắc phục sự cố
+- Tăng độ phức tạp của mạng: NAT được coi là giải pháp tạm thời và tạo ra các vấn đề trên mạng như một tác dụng phụ của việc thao tác địa chỉ tiêu đề mạng. NAT gây ra sự cố về độ trễ và khắc phục sự cố.
 
 **Ipv6**
 
