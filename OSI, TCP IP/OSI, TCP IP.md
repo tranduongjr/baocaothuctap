@@ -313,13 +313,13 @@ Gần giống như tầng mạng của mô hình OSI. Tại đây, nó cũng đ�
 Là sự kết hợp giữa tầng Vật lý và tầng liên kết dữ liệu của mô hình OSI. Chịu trách nhiệm truyền dữ liệu giữa hai thiết bị trong cùng một mạng. Tại đây, các gói dữ liệu được đóng vào khung (gọi là Frame) và được định tuyến đi đến đích đã được chỉ định ban đầu.
 
 # 2. Sự tương quan giữa mô hình OSI và TCP/IP.
-
+## 2.1. Giống nhau.
 *Sự tương đồng giữa 2 mô hình:*
 - Là các giao thức truyền thông được sử dụng rộng rãi và phổ biến
 - Cả 2 mô hình đều là mô hình triển khai giúp thiết lập kết nối giữa các thiết bị với nhau thông qua mạng Internet
 - Chúng đều là mô hình logic và có kiến trúc tương tự nhau vì cả 2 được xây dựng dựa trên các lớp.  
 - Cả 2 cung cấp các tiêu chuẩn xác định và cung cấp khuân khổ được sử dụng để thực hiện các tiêu chuẩn và thiết bị mạng.
-
+## 2.2. Khác nhau
 <img src="img/8.png">
 
  Cấu trúc phân tầng tương ứng của 2 mô hình được thể hiện như hình trên trong đó:
@@ -339,7 +339,7 @@ Là sự kết hợp giữa tầng Vật lý và tầng liên kết dữ liệu 
  |Mô hình phát triển đầu tiên, sau đó các giao thức trong mỗi lớp được phát triển|Các giao thức được phát triển đầu tiên, sau đó mô hình được phát triển|
  |Chuẩn hóa bộ định tuyến, thiết bị chuyển mạch, bo mạch chủ và các phần cứng khác|Thiết lập kết nối giữa các loại máy tính khác nhau|
 
-*Kết luận*
+## 2.3 Kết Luận
 
 Mô hình TCP/IP đáng tin cậy hơn so với mô hình OSI, trong hầu hết các trường hợp, mô hình OSI dùng để tham khảo. Mô hình TCP/IP được sử dụng cho kết nối đầu cuối để truyền dữ liệu qua internet. TCP/IP mạnh mẽ, linh hoạt, hữu hình và cũng gợi ý cách dữ liệu nên được gửi qua web. Lớp vận chuyển của mô hình TCP/IP (Giao thức TCP và UDP) kiểm tra xem dữ liệu đã đến theo thứ tự chưa, nó có lỗi hay không, các gói bị mất có được gửi hay không, xác nhận có được nhận hay không, v.v. và khả năng mở rộng của mô hình TCP nên từ đó có thể thấy mô hình TCP/IP được thịnh hành hiện nay.
 
