@@ -250,7 +250,7 @@ Chức năng chính của tầng 3 là xử lý vấn đề giao tiếp giữa c
 
 Trong tầng này còn bao gồm 2 giao thức cốt lõi là TCP và UDP.
 
-* Giao thức TCP:
+##### b.1. Giao thức TCP:
 
 TCP là giao thức truyền tải hướng kết nối (connection-oriented), nghĩa là phải thực hiện thiết lập kết nối với đầu xa trước khi thực hiện truyền dữ liệu. Tiến trình thiết lập kết nối ở TCP được gọi là tiến trình bắt tay 3 bước (threeway handshake).
     
@@ -264,7 +264,7 @@ Hỗ trợ cơ chế full-duplex ( truyền và nhận dữ liệu cùng một l
     
 Phục hồi dữ liệu bị mất trên đường truyền ( A gửi B mà không thấy xác nhận sẽ gửi lại) .
     
-* Giao thức UDP:
+##### b.2. Giao thức UDP:
 
 Ngược lại với giao thức TCP thì UDP là giao thức truyền tải hướng không kết nối (connectionless). Nó sẽ không thực hiện thao tác xây dựng kết nối trước khi truyền dữ liệu mà thực hiện truyền ngay lập tức khi có dữ liệu cần truyền (kiểu truyền best effort) => truyền tải rất nhanh cho dữ liệu của lớp ứng dụng.
     
@@ -282,7 +282,7 @@ Ví dụ, bạn đang xem phát video trực tiếp, thường được phát b�
 
 Điều này hoạt động tương tự trong các trò chơi trực tuyến. Nếu bạn bỏ lỡ một số gói tin UDP, nhân vật người chơi có thể dịch chuyển trên bản đồ khi bạn nhận gói tin UDP mới. Việc bỏ qua sửa lỗi của TCP sẽ giúp tăng tốc kết nối trò chơi và giảm độ trễ
 
-**So sánh phân biệt TCP và UDP**
+##### b.3. So sánh phân biệt TCP và UDP
 
 *Giống nhau*
 Cả 2 giao thức đều gửi dữ liệu qua Internet dưới dạng gói.
