@@ -253,7 +253,8 @@ FF05::2 (Địa chỉ multicsat cho tất cả các router trong phạm vi 1 sit
 
 0:0:0:0:0:0:0:1 là địa chỉ loopback. Một nodes có thể dùng địa chỉ này để gửi một gói tin cho chính nó.
 
-# 3. So sánh Ipv4 và IPv6
+# 3. So sánh Ipv4, IPv6 và kết luận
+## 3.1. So sánh
 
 **Bảng so sánh IPv4 và IPv6**
 
@@ -270,12 +271,12 @@ FF05::2 (Địa chỉ multicsat cho tất cả các router trong phạm vi 1 sit
 |Sử dụng tài nguyên bản ghi(A) trong hệ thống tên miền DNS|Sử dụng tài nguyên bản ghi AAAA|
 |Sử dụng con trỏ PTR trong hệ thống tên miền DNS IN-ADDR.ARPA để ánh xạ địa chỉ IPv4|Sử dụng con trỏ PTR trong hệ thống tên miền DNS IP6.ARPA để ánh xạ địa chỉ IPv6|
 
-# 4. Kết Luận
+## 3.2. Kết Luận
 
 Ngày nay, với sự bùng nổ của Internet IPv4 đang dần cạn kiệt, IPv6 là sự cần thiết đối với hầu hết các cá nhân và tổ chức bởi sự mở rộng của nó, các xu hướng về công nghệ cũng thường xuyên cập nhật vớ ipv6. vì thế chuyển đổi từ ipv4 sang ipv6 là điều cần thiết.
 
-# 5. Tìm hiểu về NAT
-## 5.1. Giới thiệu về NAT
+# 4. Tìm hiểu về NAT
+## 4.1. Giới thiệu về NAT
 
 NAT (Network Address Translation) là kỹ thuật cho phép chuyển đổi từ 1 IP này sang 1 IP khác. NAT cho phép một hay nhiều địa chỉ IP nội miền được ánh xạ với một hay nhiều địa chỉ IP ngoại miền. Thông thường, NAT thường phổ biến trong mạng sử dụng địa chỉ nội bộ (mạng LAN), cần truy cập đến mạng công cộng. NAT cũng chính là Router biên kết nối giữa hai mạng.
 
@@ -291,9 +292,9 @@ NAT cũng có thể được coi như 1 firewall cơ bản. NAT duy trì một b
 
 - Địa chỉ Outside Global: Đây là địa chỉ IP được đặt cho một thiết bị nằm ở bên ngoài mạng. Địa chỉ này là một IP hợp lệ trên Internet.
 
-## 5.2. Ưu điểm và nhược điểm của NAT
+## 4.2. Ưu điểm và nhược điểm của NAT
 
-### 5.2.1 Ưu điểm
+### 4.2.1 Ưu điểm
 
 - Tiết kiệm địa chỉ IPv4: Lượng người dùng truy cập Internet ngày càng tăng cao dẫn tới nguy cơ thiếu hụt địa chỉ IPv4. Kỹ thuật Nat sẽ giúp giảm thiểu được số lượng địa chỉ IP cần sử dụng.
 
@@ -303,7 +304,7 @@ NAT cũng có thể được coi như 1 firewall cơ bản. NAT duy trì một b
 
 - NAT giúp nhà quản trị mạng lọc được các gói tin đến và xét duyệt quyền truy cập của IP pulic đến từ 1 máy bất kỳ.
 
-### 5.2.2. Nhược điểm
+### 4.2.2. Nhược điểm
 
 - Khi dùng kỹ thuật NAT, CPU sẽ phải kiểm tra và tốn thời gian để thay đổi địa chỉ IP. Điều này làm tăng độ trễ trong quá trình định tuyến. Làm ảnh hưởng tới tốc độ đường truyền của mạng Internet.
 
@@ -311,25 +312,25 @@ NAT cũng có thể được coi như 1 firewall cơ bản. NAT duy trì một b
 
 - NAT giáu địa chỉ IP nên sẽ khiesn cho 1 vài úng dụng cần sử dụng IP không thể hoạt động được.
 
-## 5.3. Phân loại NAT và cơ chế hoạt động của từng loại.
+## 4.3. Phân loại NAT và cơ chế hoạt động của từng loại.
 
- Hiện nay NAT được phân thành nhiều chủng loại, nhưng nhìn chung ta có 3 loại NAT là: Static NAT, Dynamic NAT, NAT overload:
+Hiện nay NAT được phân thành nhiều chủng loại, nhưng nhìn chung ta có 3 loại NAT là: Static NAT, Dynamic NAT, NAT overload:
 
- ### 5.3.1. Static NAT
+### 4.3.1. Static NAT
 
- Còn được gọi với cái tên khác đó là NAT tĩnh. Đây là phương thức NAT một đôi một. Phương thức này cho phép 1 địa chỉ IP Private được kết nối với một địa chỉ IP Public. Static NAT thường được sử dụng trong trường hợp một thiết bị mạng nội bộ có nhu cầu truy cập ra bên ngoài mạng.
+Còn được gọi với cái tên khác đó là NAT tĩnh. Đây là phương thức NAT một đôi một. Phương thức này cho phép 1 địa chỉ IP Private được kết nối với một địa chỉ IP Public. Static NAT thường được sử dụng trong trường hợp một thiết bị mạng nội bộ có nhu cầu truy cập ra bên ngoài mạng.
 
- Được biết NAT tĩnh có địa chỉ IP máy tính là 192.168.32.10 địa chỉ này được Router biên dịch và chuyển đến địa chỉ IP 213.18.123.110
+Được biết NAT tĩnh có địa chỉ IP máy tính là 192.168.32.10 địa chỉ này được Router biên dịch và chuyển đến địa chỉ IP 213.18.123.110
 
- ### 5.3.2. Dynamic NAT
+### 4.3.2. Dynamic NAT
 
 Còn được gọi với cái tên khác là NAT động. Cơ chế hoạt động của nó hoàn toàn khác với NAT tĩnh. Cụ thể là NAT động cho phép địa chỉ IP Private được map với địa chỉ IP Public nằm trong nhóm. Khi này Dynamic NAT cũng có địa chỉ IP máy tính riêng cho mình. Trong Dynamic NAT máy tính có địa chỉ IP 192.168.32.10 luôn được Router biên dịch đến địa chỉ đầu tiên 213.18.123.100 trong dãy địa chỉ IP từ 213.18.123.100 đến 213.18.123.150
 
-### 5.2.3. Overload NAT.
+### 4.3.3. Overload NAT.
 
 Overload NAT là một dạng thức của NAT động. Nhiều địa chỉ IP Private sẽ được map với một địa chỉ IP Public qua các Port khác nhau.
 
 Overload NAT sẽ cấu hình cho mỗi máy tính hoạt động trong mạng nội bộ có địa chỉ IP tương ứng. Dựa vào đây, Router sẽ tiến hành biên dịch địa chỉ IP máy tính đến cùng địa chỉ IP 213.18.123.100. Quá trình đó thực hiện trên nhiều Port khác nhau.
-## 5.4. Kết luận.
+## 4.4. Kết luận.
 
 Có thể thấy NAT giữ một vai trò rất quan trọng trong việc kết nối Internet giữa các thiết bị. Trong tình trạng IPv4 đang dần suy cạn thì NAT là giải pháp tốt nhất giúp tiết kiệm được số lượng IP cần sử dụng. Và nó cũng là giải pháp tốt trong mạng LAN
