@@ -14,3 +14,4 @@ Hệ thống phân giải tên miền cũng lưu trữ các loại thông tin, c
 Mỗi website có một tên và một địa chỉ IP. Khi mở một trình duyệt web và nhập tên website, trình duyệt sẽ đến thẳng website mà không cần phải thông qua việc nhập địa chỉ IP của trang web. Quá trình dịch tên miền thành địa chỉ IP để cho trình duyệt hiểu và truy cập được vào website là công việc của 1 DNS server. Các DNS trợ giúp qua lại để phân giải địa chỉ IP thành tên miền(www.example.com) và ngược lại. Người dùng chỉ cần nhớ tên website chứ không cần phải nhớ địa chỉ Ip mỗi khi truy cập.
 
 # 2. Các bản ghi DNS (DNS record)
+# 2.1.
