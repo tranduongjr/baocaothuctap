@@ -8,7 +8,7 @@ Github là một dịch vụ nổi tiếng cung cấp kho lưu trữ mã nguồn
 - Hỗ trợ các thao tác kiểm tra source trong quá trình làm việc (diff, check modifications, show history, merge source).
 **Respository**
 - Repo: nơi chứa tất cả các mã nguồn cho một dự án
-- Có 2 cấu trúc dữ liệu chính là Object và Index được lưu trữ ẩn trong .git
+- Có 2 cấu trúc dữ liệu chính là Object và Index được lưu trữ ẩn trong git.
 - Có 2 loại repo: 
 	+ Local repo: được cài trên máy, động bộ hóa với remote bằng các lệnh
 	+ Remote repo: cài trên server chuyên dụng, điền hình hiện nay là Github.
