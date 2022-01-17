@@ -60,34 +60,34 @@ Chỉ có Root user mới có thể sử dụng thư mục này
 
 **/usr**: Chứa những thứ quan trọng như phần mềm, thư viện hàm, các dữ liệu dùng chung. Tất cả user đều có thể truy cập được. Nói các khác, nó chứa các tệp được chia sẻ, nhưng ở chế độ chỉ đọc. Thư mục này thậm chí có thể được chia sẻ với các máy tính khác trong mạng nội bộ. Thư mục này tương tự như thư mục C:\Program File của Windows.
 
-/usr/bin : Tập hợp các tệp thực thi (không phải quản trị cho tất cả người dùng) của hầu hết các ứng dụng máy tính để bàn trong số những ứng dụng khác (ví dụ như firefox).
+- /usr/bin : Tập hợp các tệp thực thi (không phải quản trị cho tất cả người dùng) của hầu hết các ứng dụng máy tính để bàn trong số những ứng dụng khác (ví dụ như firefox).
 
-/usr/lib: Thư viện dành cho C và C++
+- /usr/lib: Thư viện dành cho C và C++
 
-/usr/local: Đó là một cấp độ khác bên trong cung cấp hệ thống phân cấp tương tự như chính thư mục  /usr
+- /usr/local: Đó là một cấp độ khác bên trong cung cấp hệ thống phân cấp tương tự như chính thư mục  /usr
 
-/usr/share: Các tệp được chia sẻ như cấu tệp cấu hình,hình arnhm, biểu tượng, chủ đề,...
+- /usr/share: Các tệp được chia sẻ như cấu tệp cấu hình,hình arnhm, biểu tượng, chủ đề,...
 
-/usr/sbin: hệ thống nhị phân không thiết yếu, ví dụ deamon cho các dịch vụ mạng khác nhau, nó chứa các chương trình không cung cấp giao diện người dùng và thường chạy khi khởi động hệ thống hoặc trong một số trường hợp nhất định. Chúng không được quản lý trực tiếp bởi người dùng khi chúng đang chạy, mặc dù chúng có thể cấu hình trước khi chạy.
+- /usr/sbin: hệ thống nhị phân không thiết yếu, ví dụ deamon cho các dịch vụ mạng khác nhau, nó chứa các chương trình không cung cấp giao diện người dùng và thường chạy khi khởi động hệ thống hoặc trong một số trường hợp nhất định. Chúng không được quản lý trực tiếp bởi người dùng khi chúng đang chạy, mặc dù chúng có thể cấu hình trước khi chạy.
 
-/usr/src: Mã nguồn của một số ứng dụng và nhân Linux. Giống như /mnt, thư mục nafydudowjc người dùng quản lý trực tiếp để họ có thể lưu vào đó mã nguồn của các chương trình và thư viện và do đó có thể truy cập dễ dàng mà không gặp vấn đề về quyền. Nó cho phép mã nguồn có không gian riêng, có thể truy cập nhưng cách xa tất cả người dùng.
+- /usr/src: Mã nguồn của một số ứng dụng và nhân Linux. Giống như /mnt, thư mục nafydudowjc người dùng quản lý trực tiếp để họ có thể lưu vào đó mã nguồn của các chương trình và thư viện và do đó có thể truy cập dễ dàng mà không gặp vấn đề về quyền. Nó cho phép mã nguồn có không gian riêng, có thể truy cập nhưng cách xa tất cả người dùng.
 
 
 **/var**: chứa các tập tin lưu lại các số liệu biến đổi gồm: hệ thống tập tin log(/var/log), các gói và các file dữ liệu(/var/lib), email(/var/mail), print queues(/var/spool); lock files (/var/lock), các file tạm thời cần khi reboot (/var/tmp). Các file biến thiên bất thường như các file dữ liệu đột ngột tăng kích thước trong một thời gian ngắn sau đó lại giảm kích thước xuống còn rất nhỏ. Điển hình là các file dùng làm hàng đợi chứa dữ liệu cần đưa ra máy in hoặc các hàng đợi chứa mail. Nó thường hoạt động như một cơ quan đăng ký hệ thống. Giúp tìm ra nguồn gốc của một vấn đề.
 
-/var/log: Đây là một trong những thư mục con quan trọng nhất vì tất cả các loại nhật ký hệ thống đều được lưu trữ ở đây.
+- /var/log: Đây là một trong những thư mục con quan trọng nhất vì tất cả các loại nhật ký hệ thống đều được lưu trữ ở đây.
 
-/var/mail: Hộp thư hoặc tin nhắn từ người dùng. Nếu không sử dụng mã hóa, thì thư mục cá nhân thường được sử dụng cho cùng một công việc bởi các chương trình xử lý email.
+- /var/mail: Hộp thư hoặc tin nhắn từ người dùng. Nếu không sử dụng mã hóa, thì thư mục cá nhân thường được sử dụng cho cùng một công việc bởi các chương trình xử lý email.
 
-/var/opt: Dữ liệu được sử dụng bởi các gói được lưu trữ trong /opt
+- /var/opt: Dữ liệu được sử dụng bởi các gói được lưu trữ trong /opt
 
-/var/tmp: các tệp tạm thời, không giống như /tmp. Chúng không bị xóa giữa các phiên hoặc hệ thống khởi động lại, những vẫn không thể thiếu
+- /var/tmp: các tệp tạm thời, không giống như /tmp. Chúng không bị xóa giữa các phiên hoặc hệ thống khởi động lại, những vẫn không thể thiếu
 
-/var/spool: Các tác vụ đang chờ được xử lý
+- /var/spool: Các tác vụ đang chờ được xử lý
 
-/var/game/: Dữ liệu biến đổi từ các trò chơi hệ thống. Thư mục này không cần thiết và thường bị chính các ứng dụng trò chơi bỏ qua, vì chúng sẻ dụng thư mục người dùng trong /home để lưu dữ liệu biến đổi.
+- /var/game/: Dữ liệu biến đổi từ các trò chơi hệ thống. Thư mục này không cần thiết và thường bị chính các ứng dụng trò chơi bỏ qua, vì chúng sẻ dụng thư mục người dùng trong /home để lưu dữ liệu biến đổi.
 
-/var/crash: Dữ liệu và thông tin được lưu trữ, đề cập đến sự cố hoặc lỗi của hệ điều hành. Nó cụ thể hơn /var nói chung
+- /var/crash: Dữ liệu và thông tin được lưu trữ, đề cập đến sự cố hoặc lỗi của hệ điều hành. Nó cụ thể hơn /var nói chung
 
 **/sbin**: Chứa các chương trình thực thi nhị phân được yêu cầu bởi System Administrator cho việc bảo trì(iptables, fdisk, ifconfig, reboot, etc)
 
