@@ -86,7 +86,7 @@ Chỉ có Root user mới có thể sử dụng thư mục này
 
 *Vì máy này Ram cao lên không cần cài nữa*
 
-**Lưu ý**: Hầu hết các file hệ thống này được định dạng với ext4 vì định dạng này chỉ cho phép Linux mới có quyền truy cập.
+**Lưu ý**: Hầu hết các file hệ thống này được định dạng với kiểu ext4 vì định dạng này chỉ cho phép Linux mới có quyền truy cập. Còn nếu sử dụng định dạng ổ đĩa ngoài và muốn chia sẻ với các hệ điều hành khác như windows, mac OS,... thì các hệ điều hành này không thể đọc được hệ thống tệp ext4, khi đó nên sử dụng định dạng exFAT hoặc FAT32
 
 Chọn "Done" để hoàn tất quá trình phân vùng ổ đĩa
 
