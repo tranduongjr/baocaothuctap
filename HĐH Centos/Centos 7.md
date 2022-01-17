@@ -139,6 +139,12 @@ Với nhật ký, máy tính sẽ lưu rằng nó sẽ ghi một tệp nhát đ�
 
 Là kiểu định dạng ổ đĩa giúp cho việc quản lý thay đỏi kích thước lưu trữ của ổ đĩa, giúp ấn định không gian ổ đĩa thành những logical volume khiến cho việc thay đổi kích thước phân vùng trở nên dễ dàng. Có thể gộp hoặc tách các logiacl volume. Noskhoong để hệ thống bị gián đoạn hoạt động, cũng không làm hỏng dịch vụ, còn có kể kết hợp swap. Tuy nhiên khả năng mất dữ liệu cao khi một trong số các đĩa cứng bị hỏng.
 
+**LVM Thin Provisioning**
+
+Là tính năng cấp phát ổ cứng dựa trên sự linh hoạt của LVM. Giả sử có 1 Volum Group, Ta sẽ tạo ra 1 Thin Pool từ VG này với dung lương là 20gb cho nhiều khách hàng sử dụng. Giả sử ta có 3 khách hàng, mỗi khách hàng được cấp 6gb lưu trữ. Như vậy ta có 3 x 6Gb là 18gb. Với kỹ thuật cấp phát truyền thống thì ta chỉ có thể cấp phát thêm 2GB cho khách hàng thứ 4. Tuy nhiên với LVM Thin Provisioning, Ta vẫn có thể cấp thêm 6gb nữa cho khách hàng thứ 4. Tức là 4 x 6 = 24GB > 20Gb lúc đầu. Sở dĩ ta có thể làm dược như vậy là do mỗi user tuy được cấp 6gb nhưng thường thì họ sẽ không sài hết số dung lượng này (Nếu 4 khách hàng đều dùng hết thì ta sẽ gặp tình trạng Over Provisioning). Ta sẽ giả dụ là họ không xài hết dung lượng được cấp thì trên danh nghĩa mỗi người sẽ được 6Gb. Nhưng thực tế thì họ xài đến đâu, hệ thống sẽ cấp dung lượng đến đó.
+
+Với cơ chế cấp phát bình thường thì LVM sẽ cấp phát 1 dãy block liên tục mỗi khi người dùng tạo ra 1 volum mới. Nhưng với cơ chế Thin pool thì LVM sẽ chỉ cấp phát các block ổ cứng (là một tập hợp các con trỏ, trỏ tới ổ cứng) khi có dữ liệu thật sự ghi xuống đó. Cách tiếp cận này giúp tiết kiệm dung lượng cho hệ thống, tận dụng tối ưu dung lượng lưu trữ. Tuy nhiên nó có thể gây phân mảnh hệ thống và gây ra tình trạng Over Provisioning.
+
 **Định dạng BtrFS**
 
 Trong hệ thống lưu trữ bất kỳ, việc cấu trúc dữ liệu vẫn còn nguyên vẹn rất quan trọng vì nó bao gồm các thông tin quan trọng, chẳng hạn như cấu trúc thư mục, tên tệp, quyền truy cập và vị trí của mỗi tệp tin. BtrFS lưu trữ hai bản sao của siêu dữ liệu trên một ổ đĩa, cho phép khôi phục dữ liệu nếu ổ cứng bị hỏng bởi nhiều lý do.
@@ -147,9 +153,9 @@ Là hệ thống tệp B-tree và cho phép tổng hợp ổ đĩa, chụp ảnh
 
 **Standard Pertition**
 
-Phân vùng tiêu chuẩn 
+Sử dụng một hệ thống phân vùng tiêu chuẩn là điều cần thiết nếu có nhiều hệ điều hành được cài đặt trên cùng một đĩa.
 
-**Lưu ý**: Hầu hết các file hệ thống này được định dạng với kiểu ext4 vì định dạng này chỉ cho phép Linux mới có quyền truy cập. Còn nếu sử dụng định dạng ổ đĩa ngoài và muốn chia sẻ với các hệ điều hành khác như windows, mac OS,... thì các hệ điều hành này không thể đọc được hệ thống tệp ext4, khi đó nên sử dụng định dạng exFAT hoặc FAT32
+**Lưu ý**: Hầu hết các file hệ thống này được định dạng LVM vì những lợi ích của LVM phù hợp với việc định dạng cho các phân vùng "/boot", "/",  và định dạng ext4 vì định dạng này chỉ cho phép Linux mới có quyền truy cập và đây là định dạng cập nhật mới nhất, bản nâng cấp cao nhất của ext, phổ biến trên hầu hết các bản phân phối của Linux. Còn nếu sử dụng định dạng ổ đĩa ngoài và muốn chia sẻ với các hệ điều hành khác như windows, mac OS,... thì các hệ điều hành này không thể đọc được hệ thống tệp ext4, khi đó nên sử dụng định dạng exFAT hoặc FAT32
 
 Chọn "Done" để hoàn tất quá trình phân vùng ổ đĩa
 
