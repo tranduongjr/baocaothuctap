@@ -10,64 +10,65 @@
 # 1. Các câu lệnh thường hay sử dụng:
 ## Thao tác với hệ thống
 
-#ifconfig : xem ip của máy tính
+1. ifconfig : xem ip của máy tính hoặc dùng lệnh #ip a
 
 <img src="img/20.png">
 
-#uname : Kiểm tra hệ điều hành hiện tại đang sử dụng
+2. uname : Kiểm tra hệ điều hành hiện tại đang sử dụng
 
 <img src="img/21.png">
 
-#cat /etc/os-release : kiểm tra thông tin bản phân phối của hệ điều hành hiện tại
+3. cat /etc/os-release : kiểm tra thông tin bản phân phối của hệ điều hành hiện tại
 
 <img src="img/45.png">
 
-#date : kiểm tra ngày giờ hiện tại trên máy
+4. date : kiểm tra ngày giờ hiện tại trên máy
 
 <img src="img/22.png">
 
-#free -m : kiểm tra dung lượng RAM (-m thể hiện biểu diện dưới dạng MB)
+5. free -m : kiểm tra dung lượng RAM (-m thể hiện biểu diện dưới dạng MB)
 
 <img src="img/23.png">
 
-#lsblk : hiển thị phân vùng ổ đĩa
+6. lsblk : hiển thị phân vùng ổ đĩa
 
 <img src="img/46.png">
 
-#cat /proc/cpuinfo : Xem thông tin CPU
+7. cat /proc/cpuinfo : Xem thông tin CPU
 
 <img src="img/24.png">
 
-#pwd : hiển thị đường dẫn đến thư mục đang làm việc hiện hành
+8. pwd : hiển thị đường dẫn đến thư mục đang làm việc hiện hành
 
 <img src="img/27.png">
 
-#hostnamectl : xem thông tin hostname hiện tại của máy 
+9. hostnamectl : xem thông tin hostname hiện tại của máy 
 
-#su - : Truy cập vào tài khoản root
+10. su - : Truy cập vào tài khoản root
 
-#su - duong :truy cập vào tài khoản duong đã tạo trước đó
+11. su - duong :truy cập vào tài khoản duong đã tạo trước đó
 
 <img src="img/25.png">
 
 *Để có thể thay đổi hostname ta có thể sử dụng lệnh #hostnamectl set-hostname "tên hostname muốn đặt"* Để thực thi thay đổi này cần truy cập với tài khoản root. Sau đó chạy lệnh #systemctl restart systemd-hostnamed
 
-#whoami : kiểm tra người user đang đăng nhập
+12. whoami : kiểm tra người user đang đăng nhập
 
 <img src="img/26.png">
 
-#history : hiển thị các lệnh đã được thực hiện bởi user hiện tại
+13. history : hiển thị các lệnh đã được thực hiện bởi user hiện tại
 
 <img src="img/28.png">
-#ping + địa chỉ ip : để kiểm tra kết nối
+
+14. ping + địa chỉ ip : để kiểm tra kết nối
 
 <img src="img/29.png">
 
-#ps : Liệt kê các tiến trình đang kích hoạt bởi người dùng và PID của tiến trình đó.
+15. ps : Liệt kê các tiến trình đang kích hoạt bởi người dùng và PID của tiến trình đó.
 
 <img src="img/30.png">
 
-Để tạo user và group thì ta cần thực thi trên tài khoản root:
+16. Để tạo user và group thì ta cần thực thi trên tài khoản root:
 
 Dùng lệnh #su - sau đó xác nhận mật khẩu để truy cập root.
 
@@ -105,50 +106,84 @@ cat /etc/group
 
 <img src="img/35.png">
 
-#yum update : update hệ thống
+17. yum update : update hệ thống
 
 <img src="img/43.png">
 
-#yum install : cài đặt chương trình nào đó
+18. yum install : cài đặt chương trình nào đó
 
 <img src="img/44.png">
 
-#logout : đăng xuất
+19. logout : đăng xuất
 
-#reboot : khởi động lại
+20. reboot : khởi động lại
 
-#shutdown -h now : tắt máy ngay
+21. shutdown -h now : tắt máy ngay
 
-#shutdown -h 10 & :lập lịch tắt máy lúc 10h
+22. shutdown -h 10 & :lập lịch tắt máy lúc 10h
 
-#shutdown -r now : khởi động lại
+23. shutdown -r now : khởi động lại
 
-#init 0 : tắt máy
+24. init 0 : tắt máy
 
-#init 6 : khởi động lại máy
+25. init 6 : khởi động lại máy
+
 ## Thao tác với thư mục
 
-#mkdir : tạo thư mục
+26. mkdir : tạo thư mục
 
 <img src="img/36.png">
 
-#rmdir : Để xóa thư mục và file rỗng
+27. rmdir : Để xóa thư mục và file rỗng
 
-#rm -rf: xóa mà không cần hỏi lại những thư mục và file không rỗng
+28. rm -rf: xóa mà không cần hỏi lại những thư mục và file không rỗng
 
-#cd : trỏ đến thư mục đó:
+29. cd : trỏ đến thư mục đó:
 
 <img src="img/37.png">
 
-#ls : liệt kê nội dung của thư mục đang được trỏ tới.
+30. cat >tenfile.txt : tạo 1 file txt tại thư mục đang trỏ tới.
 
-<img src="img/38.png">
+<img src="img/48.png">
 
-#ls -l : xem quyền được phân trên thư mục đó.
+hoặc ta cũng có thể dùng lệnh #touch +tên file để tạo 1 file
 
-<img src="img/39.png">
+<img src="img/51.png">
 
-#du -sh : xem dung lượng của thư mục đang được trỏ tới.
+31. cat : để xem nội dung tệp tin
+
+<img src="img/52.png">
+
+32. Để sửa tệp tin dùng trình soạn thảo vi
+cú pháp vi + tên file muốn sửa nội dung
+
+<img src="img/56.png">
+
+<img src="img/57.png">
+
+33. mv : dùng để đổi tên hoặc di chuyển thư mục
+
+**đổi tên**
+
+cú pháp #mv tencu tenmoi
+
+<img src="img/53.png">
+
+**di chuyển**
+
+cú pháp #mv tenfile thưmụcmuốnchuyểnđến
+
+<img src="img/54.png">
+
+34. ls : liệt kê nội dung của thư mục đang được trỏ tới.
+
+<img src="img/49.png">
+
+35. ls -l : xem quyền được phân trên thư mục đó.
+
+<img src="img/50.png">
+
+36. du -sh : xem dung lượng của thư mục đang được trỏ tới.
 
 <img src="img/40.png">
 
@@ -158,13 +193,15 @@ Phân quyền chia sẻ tài nguyên trên linux xem tại : https://docs.google
 
 ## Thao tác với file
 
-#ls -a : liệt kê các file ẩn
+37. ls -a : liệt kê các file ẩn
 
 <img src="img/41.png">
 
 #cat : xem nôi dung của file đó. Ví dụ xem file /etc/hosts
 
 <img src="img/42.png">
+
+**Giải nén file**
 
 ## Thao tác với trình soạn thảo Vi
 
@@ -173,3 +210,20 @@ Phân quyền chia sẻ tài nguyên trên linux xem tại : https://docs.google
 - :q! : để thoát
 - :wq :để thoát và lưu nội dung đã chỉnh sửa.
 - / : để tìm kiếm. Ví dụ /duong
+## Thao tác với tường lửa
+
+Các lệnh cơ bản với firewall
+~~
+systemctl enable firewalld : cho phép tường lửa
+
+systemctl start firewalld : kích hoạt tường lửa
+
+systemctl status firewalld : xem trạng thái tường lửa
+
+systemctl stop firewalld : ngưng tường lửa
+
+systemctl disable firewalld : vô hiệu hóa tường lửa
+~~
+
+<img src="img/55.png">
+
