@@ -166,3 +166,10 @@ Phân quyền chia sẻ tài nguyên trên linux xem tại : https://docs.google
 
 <img src="img/42.png">
 
+## Thao tác với trình soạn thảo Vi
+
+- i : (insert) để bắt đầu thao tách ghi, sửa, xóa.
+- w : (write) để lưu
+- :q! : để thoát
+- :wq :để thoát và lưu nội dung đã chỉnh sửa.
+- / : để tìm kiếm. Ví dụ /duong
