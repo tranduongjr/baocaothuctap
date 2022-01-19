@@ -161,7 +161,7 @@ cú pháp vi + tên file muốn sửa nội dung
 
 <img src="img/57.png">
 
-33. mv : dùng để đổi tên hoặc di chuyển thư mục
+33. mv : dùng để đổi tên hoặc di chuyển thư mục.
 
 **đổi tên**
 
