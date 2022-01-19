@@ -128,6 +128,39 @@ cat /etc/group
 
 25. init 6 : khởi động lại máy
 
+**Cấu hình Ip tĩnh**
+
+Dùng lệnh cd /etc/sysconfig/network-scripts để hiển thị những card mạng đang chạy trên máy
+
+<img src="img/101.png">
+
+Ta thấy có card ens33 đang chạy. ta có thể set ip tĩnh cho card đó.
+
+dùng trình soạn thảo Vi để vào chỉnh sửa cấu hình ip
+
+```
+vi ifcfg-ens33
+```
+
+<img src="img/102.png">
+
+<img src="img/103.png">
+
+
+thoát và lưu lại.
+
+khởi động lại card mạng bằng lệnh:
+
+```
+systemctl restart network.service
+```
+
+<img src="img/104.png">
+
+kiểm tra lại thấy ip tĩnh đã được cài đặt
+
+<img src="img/105.png">
+
 ## Thao tác với thư mục
 
 26. mkdir : tạo thư mục
