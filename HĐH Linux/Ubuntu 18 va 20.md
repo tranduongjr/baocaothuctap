@@ -172,6 +172,30 @@ usermod -a -G <tên group> <tên user> : thêm user vào group
 
 <img src="img/90.png">
 
+**Set ip tĩnh**
+
+Dùng lệnh ip a để kiểm tra xem máy đang dùng card mạng nào 
+
+<img src="img/106.png">
+
+để đặt ip tĩnh trên card ens33 ta vào etc/netplan/*.yaml
+
+```
+sudo vi /etc/netplan/*.yaml
+```
+
+<img src="img/107.png">
+
+sau khi cấu hình ip tĩnh ta thoát và lưu :wq
+
+dùng lệnh sudo netplan apply để chấp nhận cấu hình đã định.
+
+<img src="img/108.png">
+
+kiểm tra lại thấy ip đã được thiết lập
+
+<img src="img/109.png">
+
 ## Thao tác với thư mục
 
 mkdir : tạo thư mục
