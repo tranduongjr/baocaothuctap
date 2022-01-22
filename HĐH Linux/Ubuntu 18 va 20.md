@@ -184,8 +184,6 @@ Dùng lệnh ip a để kiểm tra xem máy đang dùng card mạng nào
 sudo vi /etc/netplan/*.yaml
 ```
 
-<img src="img/107.png">
-
 sau khi cấu hình ip tĩnh ta thoát và lưu :wq
 
 dùng lệnh sudo netplan apply để chấp nhận cấu hình đã định.
