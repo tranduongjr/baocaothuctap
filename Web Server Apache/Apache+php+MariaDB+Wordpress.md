@@ -1,3 +1,10 @@
+## Cài Apache và PHP
+
+Tham khảo tại 
+https://github.com/tranduongjr/baocaothuctap/blob/main/Web%20Server%20Apache/1.%20Apache%20with%20html.md
+
+https://github.com/tranduongjr/baocaothuctap/blob/main/Web%20Server%20Apache/Apache%20with%20php.md
+
 # Cài MySQL - MariaDB
 
 MySQL được thay thế bằng MariaDB trong centOS 7.
