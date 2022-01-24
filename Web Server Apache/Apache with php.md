@@ -47,7 +47,9 @@ systemctl reload httpd
 
 Sau đó tạo file index.php trong /var/www/html/tranduongjr.com và push nội dung vào.
 
+
 <img src="img/17.png">
+
 
 <img src="img/18.png">
 
