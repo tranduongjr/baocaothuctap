@@ -8,77 +8,80 @@ yum update
 yum install epel-release -y
 ```
 
+
 2. Cài Nginx
+
+```
+yum install nginx
+```
 
 <img src="img/1.png">
 
-3. Tạo thư mục chứa Vhost
+Sau đó khởi động nginx
 
 ```
-mkdir -p /var/www/html/tranduongjr.com
+systemctl enable nginx
 
-mkdir -p /var/www/html/tranduongjr.com/logs
-```
-
-Phân quyền
-
-```
-chown -R nginx:nginx /var/www/html/tranduongjr.com
-
-Tạo File index.html
-
-```
-vi /var/www/html/tranduongjr.com/index.html
-
-
-<img src="img/2.png">
-
-<img src="img/3.png">
-
-4. Tạo Vhost
-
-Tất cả các file Vhost của nginx nằm tại  thư mục /etc/nginx/conf.d . Để tiện tquarn lý mỗi website thì ta nên có 1 vhost riêng. 
-
-Ở đây vhost tranduongjr.com sẽ được đặt tại file tranduongjr.com.conf
-
-```
-vi /etc/nginx/conf.d/tranduongjr.com.conf
-```
-
-Cấu hình file Vhost
-
-<img src="img/5.png">
-
-Khởi động nginx
-```
 systemctl start nginx
 ```
 
+<img src="img/3.png">
+
+Kiểm tra hoạt động của nginx (nhập địa chỉ ip của webserver)
+
+<img src="img/2.png">
+
+## Cài PHP
+
+Cài 2 gói php-mysql và php-fpm
+
+```
+yum install php php-mysql php-fpm
+```
+
+<img src="img/4.png">
+
+Sau đó cấu hình các thông số cho PHP. Ta mở file cấu hình php-fpm với dòng lệnh:
+
+```
+vi /etc/php.ini
+```
+
+Tìm đến tham số cgi.fix_pathinfo đang được comment lại bằng dấu ; và thiết lập giá trị cho tham số này bằng 0. Đây là một thiết lập cực lỏng lẻo về bảo mật, tham số này cho phép PHP sẽ thực thi một file gần nó nhất nếu không có file PHP nào phù hợp. Sử dụng /<từ tìm kiếm> để tìm kiếm trong vi
+
+Chuyển tham số cgi.fix_pathinfo=0 chuyển thành 1
+
+<img src="img/5.png">
+
+Lưu lại và thoát
+
+Tiếp đến mở file cấu hình php-fpm.d/www/conf
+
+```
+vi /etc/php-fpm.d/www/conf
+```
+
+Tìm đến tham số listen và thay bằng:
+
 <img src="img/6.png">
 
-2. Cài PHP 
+Tìm đến listen.owner và listen group rồi bỏ comment(;) đi
 
-Tương tự như cài đối với apache
+<img src="img/7.png">
 
-Thêm remi repo
+Tìm đến tham số user = apache, group = apache và thay bằng nginx:
 
-```
-rpm -Uvh http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-```
+<img src="img/8.png">
 
-Cài Yum-utils để lấy tiện ích yum-config-manager:
+Như vậy ta đã cấu hình xong file www.conf thực hiện lưu và thoát sau đó khởi động php-fpm.
 
 ```
-yum -y install yum-utils
+systemctl enable php-fpm
+
+systemctl start php-fpm
 ```
 
-Cài PHP 7.0
+<img src="img/9.png">
 
-```
-yum-config-manager --enable remi-php70
-
-yum -y install php php-opcache
-```
-
-
+**Cấu hình nginx để xử lý các trang PHP**
 
