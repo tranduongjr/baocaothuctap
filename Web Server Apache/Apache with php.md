@@ -1,6 +1,6 @@
 # 1. Cài đặt apache
 
-Như đã cài trước đó
+Như đã cài trước đó tham khảo tại https://github.com/tranduongjr/baocaothuctap/blob/main/Web%20Server%20Apache/1.%20Apache%20with%20html.md 
 
 # 2. Cài PHP
 
