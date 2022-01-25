@@ -84,7 +84,7 @@ Sau đó cấu hình các thông số cho PHP.
 
 Chúng ta sử dụng Unix Domain Soket để kết nối Nginx tới php-fpm thay vì TCP/IP Socket. Chi tiết về 2 socket này tham khảo tại :
 
-
+https://github.com/tranduongjr/baocaothuctap/blob/main/Unix%20Soket%20%26%20TCP%20IP%20socket/Unix%20Soket%20%26%20TCP%20IP%20socket.md
 
 Ta mở file cấu hình php-fpm với dòng lệnh:
 
