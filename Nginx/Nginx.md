@@ -86,7 +86,9 @@ Sau đó cấu hình các thông số cho PHP. Ta mở file cấu hình php-fpm 
 vi /etc/php.ini
 ```
 
-Tìm đến tham số cgi.fix_pathinfo đang được comment lại bằng dấu ; và thiết lập giá trị cho tham số này bằng 0. Đây là một thiết lập cực lỏng lẻo về bảo mật, tham số này cho phép PHP sẽ thực thi một file gần nó nhất nếu không có file PHP nào phù hợp. Sử dụng /<từ tìm kiếm> để tìm kiếm trong vi
+Tìm đến tham số cgi.fix_pathinfo đang được comment lại bằng dấu ; và thiết lập giá trị cho tham số này bằng 0. Đây là một thiết lập cực lỏng lẻo về bảo mật, tham số này cho phép PHP sẽ thực thi một file gần nó nhất nếu không có file PHP nào phù hợp. 
+
+Sử dụng /<từ tìm kiếm> để tìm kiếm trong vi
 
 Chuyển tham số cgi.fix_pathinfo=0 chuyển thành 1
 
@@ -182,7 +184,7 @@ systemctl start mariadb.service
 Tiếp theo chạy 1 script về bảo mật giúp loại bỏ một số mặc định nguy hiểm với lệnh:
 
 ```
-mysql-secure_installation
+mysql_secure_installation
 ```
 
 <img src="img/20.png">
@@ -192,7 +194,7 @@ mysql-secure_installation
 - Loại bỏ những user nặc danh
 - Không cho phép root remote từ xa
 - Loại bỏ các CSDL test
-- Tải lại các đặc quyền
+- Tải lại các đặc quyền vừa thiết lập
 
 ### Cài WordPress
 
