@@ -80,7 +80,13 @@ yum install php php-mysql php-fpm
 
 <img src="img/4.png">
 
-Sau đó cấu hình các thông số cho PHP. Ta mở file cấu hình php-fpm với dòng lệnh:
+Sau đó cấu hình các thông số cho PHP. 
+
+Chúng ta sử dụng Unix Domain Soket để kết nối Nginx tới php-fpm thay vì TCP/IP Socket. Chi tiết về 2 socket này tham khảo tại :
+
+
+
+Ta mở file cấu hình php-fpm với dòng lệnh:
 
 ```
 vi /etc/php.ini
@@ -138,7 +144,7 @@ Truy cập file Vhost để chỉnh sửa cấu hình:
 vi /etc/nginx/conf.d/tranduongjr.com.conf
 ```
 
-<img src="img/15.png">
+<img src="img/15.png"> 
 
 Khởi động lại Nginx 
 
