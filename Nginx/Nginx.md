@@ -1,4 +1,4 @@
-# Cài đặt Nginx
+## Cài đặt Nginx
 
 1. Update và cài thêm epel
 
