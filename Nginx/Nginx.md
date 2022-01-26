@@ -102,10 +102,10 @@ Chuyển tham số cgi.fix_pathinfo=0 chuyển thành 1
 
 Lưu lại và thoát
 
-Tiếp đến mở file cấu hình php-fpm.d/www/conf
+Tiếp đến mở file cấu hình php-fpm.d/www.conf
 
 ```
-vi /etc/php-fpm.d/www/conf
+vi /etc/php-fpm.d/www.conf
 ```
 
 Tìm đến tham số listen và thay bằng:
