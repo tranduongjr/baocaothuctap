@@ -294,7 +294,7 @@ Thay đổi các giá trị DB_USERNAME, DB_USER, DB_PASSWORD như đã thiết 
 
 <img src="img/26.png">
 
-Xóa các file index.html và info.php đã dùng để test web và php trước đó
+Xóa các file index.html và info.php đã dùng để test web và php trước đó.
 
 Khởi động lại Apache
 
