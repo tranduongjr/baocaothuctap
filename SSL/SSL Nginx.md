@@ -1,10 +1,36 @@
 # 1. Giới thiệu
 ## SSL là gì?
-- SSL là chữ viết tắt của Secure Socket Layer (lớp bảo socket bảo mật). Một loại bảo mật giúp mã hóa liên lạc giữa website và trình duyệt. 
+- SSL là chữ viết tắt của Secure Socket Layer (lớp socket bảo mật). Một loại bảo mật giúp mã hóa liên lạc giữa website và trình duyệt. 
 
 - Chức năng chính của SSL là bảo vệ thông tin và giao tiếp giữa máy khách và máy chủ. Giao tiếp này chủ yếu liên quan tới các trang web trên HTTP, email, và SSL đảm bảo mã hóa và giải mã các thông điệp được chuyển giữa các máy chủ này.
 
 - SSL cho phép các trang web bảo mật vì nó loại bỏ bất kỳ người trung gian nào trên mạng. Nó cũng cung cấp một đường truyền thông tin liên lạc an toàn, nơi khách hàng có thể truyền thông tin đến và đi từ một trình duyệt mà không bị can thiệp.
+
+## Tại sao nên sử dụng SSL
+
+Khi đăng ký tên miền để sử dụng các dịch vụ website, email sẽ luôn có những lỗ hổng bảo mật dẫn tới nguy cơ bị tấn công từ hacker. Giải pháp SSL giúp bảo vệ website và dữ liệu trong quá trình trao đổi thông tin giữa máy khách và máy chủ.
+
+- Bảo mật dữ liệu: Dữ liệu được mã hóa và chỉ người nhận đích thực mới có thể giải mã 
+- Toàn vẹn dữ liệu: Dữ liệu không thể bị thay đổi trên đường truyền
+- Chống chối bỏ: Đối tượng thực hiện gửi dữ liệu không thể phủ nhận dữ liệu của mình
+
+## Các loại chứng chỉ SSL
+
+1. Chứng chỉ SSL DV
+
+DV là viết tắt của Domain Validated. SSL DV là kiểu chứng chỉ có tốc độ cấp phát nhanh nhất, chỉ trong vài phút. Thích hợp với người dùng cá nhân vì chỉ cần chứng thực tên miền bằng cách verify qua email tên miền là xong.
+
+2. Chứng chỉ SSL OV
+OV là viết tắt của (Organization Validation). OV SSL dành cho các tổ chức hoặc doanh nghiệp. Ngoài việc xác minh quyền sở hữu tên miền, bạn còn phải chứng thực doanh nghiệp qua các giấy tờ hợp lệ.
+
+3. Chứng chỉ SSL EV
+EV là viết tắt của (Exented Validation). EV SSL chỉ dành cho các doanh nghiệp hay các tổ chức chính phủ có giấy tờ hợp lệ. Ngoài việc xác minh các giấy phép hoạt động, CA còn phải tuân thủ nghiêm ngặt các quá trình chứng thực tổ chức đang hoạt động và có uy tín. Mỗi EV SSL chỉ được đăng ký tối đa 2 năm, vì sau mỗi 2 năm CA sẽ cần chứng thực lại và chắc chắn doanh nghiệp của bạn vẫn đang hoạt động.
+
+4. UCC SSL
+UCC là viết tắt của (Unified Communication Certificate). Người ta có thể gọi nó là UC Certificate và chứng chỉ này được thiết kế riêng cho các dịch vụ như Exchange Server hay Office Communications
+
+5. SAN SSL
+SAN là viết tắt của (Subject Alternative Name) . Là mua thêm tên miền để tích hợp vào chứng chỉ SSL có sẵn. Ví dụ khi mua Geotrust TrueBusinessID UC/SAN mặc định đã có sẵn 4 SAN . Trong trường hợp này ngoài tên miền chính còn được add thêm 4 tên miền nữa và tổng cộng là bạn được sử dụng 5 tên miền(FQDN) trong một chứng chỉ duy nhất.
 
 ## Hoạt động của SSL
 
@@ -13,7 +39,7 @@ Hai hệ thống mã hóa chi phối cách SSL hoạt động là:
 - Mã hóa khóa bất đối xứng
 - Mã hóa khóa đối xứng
 
-Mã hóa khóa bất đối xứng hay còn gọi là mật mã khóa công khai. Trong mật mã bất đối xứng, có 2 cặp khóa là khóa công khai và khóa riêng. Cả hai đều tham gia vào quá trình mã hóa hoặc giải mã dữ liệu.
+Mã hóa khóa bất đối xứng hay còn gọi là mật mã khóa công khai. Trong mật mã bất đối xứng, có 1 cặp khóa là khóa công khai và khóa riêng. Cả hai đều tham gia vào quá trình mã hóa hoặc giải mã dữ liệu.
 
 Trong mã hóa bất đối xứng thì một khóa được gán cho một trong hai bên ở đầu kia một khóa công khai. Khóa còn lại là khóa riêng được dùng để mã hóa dữ liệu và các bên không xác định được. Dữ liệu được xử lý bằng khóa riêng để mã hóa và giải mã bằng khóa công khai.
 
@@ -74,7 +100,7 @@ yum install certbot-nginx -y
 
 ### Cài đặt SSL Let's Encrypt
 
-Lưu ý: Phải đảm bảo domain đã được trỏ về máy chủ ( Nếu cài SSL cho cả www.domain.com thì sub www cũng phải được trỏ về máy chủ)
+Lưu ý: Phải đảm bảo domain đã được trỏ về máy chủ (Nếu cài SSL cho cả www.domain.com thì sub www cũng phải được trỏ về máy chủ)
 
 Để cài SSL cho Website, sử dụng lệnh sau (Tùy thuộc vào website của mọi người, ví dụ ở đây là website tranduongjr.com)
 
@@ -104,7 +130,7 @@ Chứng chỉ do Let's Encrypt cấp là miễn phí và có hạn 90 ngày, sau
 
 Chứng chỉ Let's Encrypt chỉ có hiệu lực 90 ngày, thay vì mỗi khi hết 90 ngày ta lại phải cấu hình thủ công lại thì ta sẽ cấu hình gia hạn tự động.
 
-Ta có thể gia hạn tự động với lệnh:
+Ta có thể gia hạn thủ với lệnh:
 
 ```
 certbot renew --dry-run
@@ -185,7 +211,7 @@ Chứng chỉ do Let's Encrypt cấp là miễn phí và có hạn 90 ngày, sau
 
 Chứng chỉ Let's Encrypt chỉ có hiệu lực 90 ngày, thay vì mỗi khi hết 90 ngày ta lại phải cấu hình thủ công lại thì ta sẽ cấu hình gia hạn tự động.
 
-Ta có thể gia hạn tự động với lệnh:
+Ta có thể gia hạn thủ công với lệnh:
 
 ```
 certbot renew --dry-run
