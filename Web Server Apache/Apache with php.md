@@ -15,6 +15,10 @@ rpm -Uvh http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 Cài yum-untils để lấy tiện ích yum-config-manager:
 
+```
+yum -y install yum-utils
+```
+
 <img src="img/14.png">
 
 Cập nhật:
