@@ -1,6 +1,6 @@
 # 1. Giới thiệu
 ## SSL là gì?
-- SSL là chữ viết tắt của Secure Socket Layer (lớp bảo socket bảo mật). Một loại bảo mật giúp mã hóa liên lạc giữa website và trình duyệt. 
+- SSL là chữ viết tắt của Secure Socket Layer (lớp socket bảo mật). Một loại bảo mật giúp mã hóa liên lạc giữa website và trình duyệt. 
 
 - Chức năng chính của SSL là bảo vệ thông tin và giao tiếp giữa máy khách và máy chủ. Giao tiếp này chủ yếu liên quan tới các trang web trên HTTP, email, và SSL đảm bảo mã hóa và giải mã các thông điệp được chuyển giữa các máy chủ này.
 
@@ -13,7 +13,7 @@ Hai hệ thống mã hóa chi phối cách SSL hoạt động là:
 - Mã hóa khóa bất đối xứng
 - Mã hóa khóa đối xứng
 
-Mã hóa khóa bất đối xứng hay còn gọi là mật mã khóa công khai. Trong mật mã bất đối xứng, có 2 cặp khóa là khóa công khai và khóa riêng. Cả hai đều tham gia vào quá trình mã hóa hoặc giải mã dữ liệu.
+Mã hóa khóa bất đối xứng hay còn gọi là mật mã khóa công khai. Trong mật mã bất đối xứng, có 1 cặp khóa là khóa công khai và khóa riêng. Cả hai đều tham gia vào quá trình mã hóa hoặc giải mã dữ liệu.
 
 Trong mã hóa bất đối xứng thì một khóa được gán cho một trong hai bên ở đầu kia một khóa công khai. Khóa còn lại là khóa riêng được dùng để mã hóa dữ liệu và các bên không xác định được. Dữ liệu được xử lý bằng khóa riêng để mã hóa và giải mã bằng khóa công khai.
 
@@ -23,7 +23,7 @@ SSL sử dụng cả mã hóa bất đối xứng và mã hóa đối xứng đ�
 
 ## Cách truyền dữ liệu quá SSL
 
-Giao tiếp giữa máy chủ và máy khách được ví như bắt đầu bằng một cái bắt tay. khi bắt đầu, trình duyệt cố gắng giao tiếp với máy chủ web. Trong SSL sự bắt đầu này sử dụng mã hóa khóa bất đối xứng. Khi bắt đầu :
+Giao tiếp giữa máy chủ và máy khách được ví như bắt đầu bằng một cái bắt tay. Khi bắt đầu, trình duyệt cố gắng giao tiếp với máy chủ web. Trong SSL sự bắt đầu này sử dụng mã hóa khóa bất đối xứng. Khi bắt đầu :
 
 - Trình duyệt xác minh tính xác thực của máy chủ.
 - Trình duyệt và máy chủ mở một kết nối an toàn để liên lạc.
@@ -104,7 +104,7 @@ Chứng chỉ do Let's Encrypt cấp là miễn phí và có hạn 90 ngày, sau
 
 Chứng chỉ Let's Encrypt chỉ có hiệu lực 90 ngày, thay vì mỗi khi hết 90 ngày ta lại phải cấu hình thủ công lại thì ta sẽ cấu hình gia hạn tự động.
 
-Ta có thể gia hạn tự động với lệnh:
+Ta có thể gia hạn thủ công với lệnh:
 
 ```
 certbot renew --dry-run
@@ -185,7 +185,7 @@ Chứng chỉ do Let's Encrypt cấp là miễn phí và có hạn 90 ngày, sau
 
 Chứng chỉ Let's Encrypt chỉ có hiệu lực 90 ngày, thay vì mỗi khi hết 90 ngày ta lại phải cấu hình thủ công lại thì ta sẽ cấu hình gia hạn tự động.
 
-Ta có thể gia hạn tự động với lệnh:
+Ta có thể gia hạn thủ công với lệnh:
 
 ```
 certbot renew --dry-run
