@@ -120,12 +120,6 @@ Tìm đến tham số user = apache, group = apache và thay bằng nginx:
 
 <img src="img/8.png">
 
-Phân quyền cho thư mục /var/run/php-fpm/php-fpm.sock cho owner Nginx và group Nginx có quyền truy xuất, chạy php-fpm.
-
-```
-chown -R nginx:nginx /var/run/php-fpm/php-fpm.sock
-```
-
 Như vậy ta đã cấu hình xong file www.conf thực hiện lưu và thoát sau đó khởi động php-fpm.
 
 ```
@@ -136,12 +130,46 @@ systemctl start php-fpm
 
 <img src="img/9.png">
 
+Phân quyền cho thư mục /var/run/php-fpm/php-fpm.sock cho owner Nginx và group Nginx có quyền truy xuất, chạy php-fpm.
+
+```
+chown -R nginx:nginx /var/run/php-fpm/php-fpm.sock
+```
+
 **Cấu hình nginx để xử lý các trang PHP**
 
 Truy cập file Vhost để chỉnh sửa cấu hình:
 
 ```
 vi /etc/nginx/conf.d/tranduongjr.com.conf
+```
+
+```
+server {
+    listen 80;
+    server_name www.tranduongjr.com tranduongjr.com;
+    access_log /usr/share/nginx/html/access.log;
+    error_log /usr/share/nginx/html/error.log;
+    root /usr/share/nginx/html;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+    error_page 404 /404.html;
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+
+    location ~ \.php$ {
+        roor /usr/share/nginx/html/;
+        fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+}
 ```
 
 <img src="img/15.png"> 
