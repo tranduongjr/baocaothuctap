@@ -178,3 +178,15 @@ systemctl restart nginx
 Truy cập vào trang web trên trình duyệt để kiểm tra kết quả:
 
 <img src="img/32.png">
+
+Để tự động chuyển hướng từ http sang https ta vào file cấu hình Vhost của website và chỉnh sửa đoạn cấu hình website trên port 80 như sau:
+
+```
+vi /etc/nginx/conf.d/tranduongjr.com.conf
+```
+
+<img src="img/34.png">
+
+### Tổng kết
+
+Như vậy bài viết đã hướng dẫn cấu hình SSL với chứng chỉ SSL được cung cấp từ bên tin cậy để cài đặt bảo mật cho website
