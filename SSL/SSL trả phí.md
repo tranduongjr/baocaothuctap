@@ -48,14 +48,14 @@ Sau đó Verify Domain
 
 Sau khi xác nhận miền ta sẽ được cấp File Certificate, chúng ta sẽ tải về vài tiếp tục cài đặt chứng chỉ SSL cho website
 
-<img src="img/22.png">
+<img src="img/33.png">
 
 Chứng chỉ sẽ gồm 3 file là key, crt và ca_bundle
 
 <img src="img/24.png">
 
 - ca_bundle.crt : file này là CA root
--certificate.crt : file này là chứng chỉ SSL
+- certificate.crt : file này là chứng chỉ SSL
 - private.key : File này là Private key
 
 ## Cài SSL lên máy chủ Web
