@@ -173,3 +173,61 @@ Chỉnh sửa các file của hệ thống
 Hiển thị thông tin của hệ thống
 
 <img src="img/42.png">
+
+## User
+
+### Account Manager
+
+<img src="img/44.png">
+
+*Domain Setup* : Cấu hình Domain, tại đây có thể chỉnh sửa domain của User, lựa chọn phiên bản PHP cho domain
+
+<img src="img/43.png">
+
+*Subdomain Management* : Quản lý các subdomain
+
+*DNS Management* : Quản lý các bản ghi DNS
+
+*SSL Certificates* : Quản lý chứng chỉ SSL cho domain của user
+
+*FTP Managerment* : Quản lý kết nối FTP
+
+*MySQL Management*: Quản lý các database 
+
+<img src="img/49.png">
+
+*Site redirection* : Chuyển hướng trang web
+
+*PHP Settings* : cài đặt PHP
+
+### Email Manager
+
+<img src="img/45.png">
+
+Quản lý email, Các tài khoản Email, Tự động phản hồi mail, bộ lọc thư rác, bản ghi MX
+
+### Advanced Features
+
+<img src="img/46.png">
+
+*Create/Restore Backups*: Back up hoặc Restore dữ liệu của Site
+
+<img src="img/47.png">
+
+*Cron Jobs*: Tạo các Job tự động
+
+*Custom Error Page* : Tùy chỉnh trang lỗi
+
+*Two-Step Authentication*: Xác thực 2 bước
+
+*Password Protected Directory*: Cấu hình mật khẩu cho các thư viện muốn bảo mật.
+
+### System Info & File
+
+Tương tự như bên Admin cũng gồm quản lý file (File Manager), các thông tin về hệ thống, các modules đã cài đặt.
+
+<img src="img/48.png">
+
+### Extra Features
+
+*phpMyAdmin*: Quản trị database của các site
