@@ -2,7 +2,7 @@
 ## Chuẩn bị
 Cần chuẩn bị chứng chỉ SSL từ nhà cung cấp tin cậy
 
-Tham khảo tại các lấy chứng chỉ SSL tại: https://github.com/tranduongjr/baocaothuctap/blob/main/SSL/SSL%20tr%E1%BA%A3%20ph%C3%AD.md
+Tham khảo tại cách lấy chứng chỉ SSL tại: https://github.com/tranduongjr/baocaothuctap/blob/main/SSL/SSL%20tr%E1%BA%A3%20ph%C3%AD.md
 
 ## Tiến hành cài đặt SSL Certificates
 
