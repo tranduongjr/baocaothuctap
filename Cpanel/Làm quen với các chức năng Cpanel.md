@@ -410,3 +410,29 @@ Tại đây có thể tạo các Cron Jobs, theo dõi DNS, quản lý cấu hìn
 **- Thông tin liên hệ**: Thiết lập liên hệ cảnh báo tới người quản trị
 
 **- User Manager**: Quản lý các User của Account CPanel
+
+# Các Log của CPanel
+
+Các log file của CPanel được lưu tại thư mục /usr/local/cpanel/logs, gồm những file sau:
+
+**access_log**: log truy cập của cPanel và WHM.
+
+**error_log**: log các lỗi của cPanel và WHM.
+
+**login_log**: log các đăng nhập cPanel và WHM.
+
+Ngoài ra, cPanel còn lưu log hệ thống tại thư mục /var/log/, gồm có
+
+**bandwidth**: log lưu lượng băng thông sử dụng của server.
+
+**chkservd.log**: log hệ thống theo dõi các dịch vụ trên server.
+
+**clamav**: log của hệ thống quét virus clamav.
+
+**cpupdate**: log tác vụ nâng cấp của cPanel.
+
+**maillog**: log các đăng nhập và kết nối gửi/nhận thư của các dịch vụ mail (pop3/imap).
+
+**xferlog**: log các kết nối qua FTP.
+
+Ngoài ra, log của các tài khoản được lưu trữ trong thư mục /usr/local/cpanel/domlogs/ và log của Apache được lưu tại /usr/local/apache/logs/.
