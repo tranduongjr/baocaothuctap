@@ -10,8 +10,8 @@ Các chức năng chính của WHM:
 
 - Quản lý cài đặt Web
 - Thay đổi Password Root
-- Configure CPanel Analytics
-- Cấu hình các Cron jobs Cpanel
+- Configure cPanel Analytics
+- Cấu hình các Cron jobs cPanel
 - Initial Quota Setup
 - Link Server Nodes
 - Quản lý Profile Server
@@ -22,7 +22,7 @@ Các chức năng chính của WHM:
 - Cập nhật các tiện ích
 - WHM Marketplace
 
-2. Support: Khởi tạo các Ticket và hộ trợ kiểm soát truy cập Cpanel
+2. Support: Khởi tạo các Ticket và hộ trợ kiểm soát truy cập cPanel
 
 3. Networking Setup: Chỉnh sửa hostname và DNS
 
@@ -80,7 +80,7 @@ Và các tính năng khác như Reset băng thông, xóa Account, giải phóng 
 
 - Chuyển dữ liệu từ Addon Domain tới Account
 - Xem lại quá trình chuyển và khôi phục dữ liệu
-- Chuyển và khôi phục một Account Cpanel
+- Chuyển và khôi phục một Account cPanel
 - Tranfer tool
 
 16. Themes: Thay đổi giao diện của WHM
@@ -120,7 +120,7 @@ Quản lý các Database, Username, Password, phpmyadmin, các tiến trình MyS
 
 23. System Health: Quản lý các tiến trình, trạng thái của hệ thống
 
-24. CPanel: Quản lý các cầu hình, log, các Plugin hay các cài đặt cho Cpanel
+24. cPanel: Quản lý các cầu hình, log, các Plugin hay các cài đặt cho cPanel
 
 25. SSL/TLS: Quản lý SSL Certificate cho các domain 
 
@@ -157,7 +157,7 @@ Sau đó điền các thông tin để tạo account và các thiết lập đ�
 
 <img src="img/15.png">
 
-Thông báo trả về tạo tài khoản thành công, ta có thể truy cập vào cpanel của account này hoặc truy cập theo port 2083 và đăng nhập với thông tin đã tạo trước đó để truy cập vào trang quản trị host của account
+Thông báo trả về tạo tài khoản thành công, ta có thể truy cập vào cPanel của account này hoặc truy cập theo port 2083 và đăng nhập với thông tin đã tạo trước đó để truy cập vào trang quản trị host của account
 
 <img src="img/16.png">
 
@@ -193,7 +193,7 @@ Sau khi cài đặt thành công sẽ có thông báo trả về
 
 <img src="img/22.png">
 
-# Các chức năng trên Cpanel
+# Các chức năng trên cPanel
 
 Truy cập bằng port 2083
 
@@ -241,7 +241,7 @@ Ngoài ra ta có thể truy cập vào roundcube để thực hiện các thao t
 <img src="img/48.png">
 <img src="img/49.png">
 
-Các chức năng trong quản lý tài khoản Email của CPanel như:
+Các chức năng trong quản lý tài khoản Email của cPanel như:
 
 **- Chuyển tiếp thư:**: Ta có thể chuyển tiếp theo mail hoặc theo miền
 
@@ -360,7 +360,7 @@ Nơi quản lý các sơ đồ lỗi, băng thông, truy cập thô, awstarts, t
 
 Tham khảo cách lấy chứng chỉ SSL tại: https://github.com/tranduongjr/baocaothuctap/blob/main/SSL/SSL%20tr%E1%BA%A3%20ph%C3%AD.md
 
-Để cài đặt SSL từ CPanel ta vào tùy chọn Bảo mật(Security) => SSL/TLS
+Để cài đặt SSL từ cPanel ta vào tùy chọn Bảo mật(Security) => SSL/TLS
 
 <img src="img/37.png">
 
@@ -401,19 +401,19 @@ Tại đây có thể tạo các Cron Jobs, theo dõi DNS, quản lý cấu hìn
 
 ## Tùy chọn
 
-**- Password & Security**: Thiết lập, thay đổi mật khẩu cho Account Cpanel
+**- Password & Security**: Thiết lập, thay đổi mật khẩu cho Account cPanel
 
-**- Đổi ngôn ngữ**: Thiết lập ngôn ngữ cho trang quản trị CPanel
+**- Đổi ngôn ngữ**: Thiết lập ngôn ngữ cho trang quản trị cPanel
 
-**- Đổi kiểu**: Thiết lập kiểu giao diện cho Cpanel
+**- Đổi kiểu**: Thiết lập kiểu giao diện cho cPanel
 
 **- Thông tin liên hệ**: Thiết lập liên hệ cảnh báo tới người quản trị
 
-**- User Manager**: Quản lý các User của Account CPanel
+**- User Manager**: Quản lý các User của Account cPanel
 
-# Các Log của CPanel
+# Các Log của cPanel
 
-Các log file của CPanel được lưu tại thư mục /usr/local/cpanel/logs, gồm những file sau:
+Các log file của cPanel được lưu tại thư mục /usr/local/cpanel/logs, gồm những file sau:
 
 **access_log**: log truy cập của cPanel và WHM.
 
