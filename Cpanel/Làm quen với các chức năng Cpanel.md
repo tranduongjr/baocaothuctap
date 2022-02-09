@@ -197,15 +197,106 @@ Sau khi cài đặt thành công sẽ có thông báo trả về
 
 Truy cập bằng port 2083
 
+Gồm quản trị về Email, tệp, cơ sở dữ liệu, miền, bảo mật, Phần mềm, nâng cao, tùy chọn
+
 <img src="img/25.png">
 
-## Cài WordPress
+## Email
 
-Có thể cài WordPress bằng WordPress Toolkit tương tự như bên WHM
+Gồm các chức năng như tạo tài khoản email. Chúng ta vào tùy chọn Tài khoản Email
 
-<img src="img/26.png">
+<img src="img/46.png">
 
-## Backup/Restore Web
+<img src="img/43.png">
+
+Điền thông tin để tạo tài khoản và click vào Tạo
+
+<img src="img/44.png">
+
+Thông tin các mail đã tạo cũng được quản lý tại đây
+
+<img src="img/45.png">
+
+Tại đây ta có thể các tùy chọn về check mail, quản lý cấu hình của email, hoặc các thiết bị kết nối với tài khoản mail (connect devices)
+
+Ta có thể vào webmail bằng tùy chọn check mail. Tại đây có các tùy chọn, tính năng đối với email đó:
+
+<img src="img/47.png">
+
+- Autoresponders: Thiết lập thư trả lời tự động
+- Email Filters: Quản lý bộ lọc mail
+- Forwarders: Thiết lập chuyển tiếp thư
+- Configure Calender and contacts Client: Thiết lập lịch và danh bạ
+- Password & Security: Thiết lập mật khẩu cho mail
+- Contact Information: Thiết lập liên hệ cảnh báo cho mail
+- Account Preferences: Tùy chọn tài khoản
+- Spam Filters: Bộ lọc thư rác
+- BoxTrapper: Bảo vệ hộp thư đến khỏi các tin nhắn spam
+- Configure Mail Client: Thiết lập tài khoản email trên các thiết bị 
+- Manage Disk usage Quản lý lưu lượng sử dụng của mail
+- Track delivery: Theo dõi quá trình di chuyển của mail
+
+Ngoài ra ta có thể truy cập vào roundcube để thực hiện các thao tác gửi nhận thư: 
+
+<img src="img/48.png">
+<img src="img/49.png">
+
+Các chức năng trong quản lý tài khoản Email của CPanel như:
+
+**- Chuyển tiếp thư:**: Ta có thể chuyển tiếp theo mail hoặc theo miền
+
+<img src="img/50.png">
+
+**- Định tuyến Mail**
+
+**- Tự động trả lời**: Thiết lập trả lời tự động cho 1 tài khoản Email nào đó
+
+**- Địa chỉ mặc định**
+
+**- Danh sách Gửi Thư**: Tạo danh sách gửi thư
+
+**- Theo dõi chuyển giao**: Hiển thị lịch sử gửi và nhận thư và kết quả
+
+<img src="img/51.png">
+
+**- Bộ lọc email chung**: Thiết lập bộ lọc email chung cho các tài khoản email
+
+**- Bộ lọc email**: Quản lý bộ lọc cho từng tài khoản email
+
+<img src="img/52.png">
+
+**- email - deliverability**: Cấu hình liên quan tới khả năng gửi thư, các bản ghi SPF,DKIM
+
+**- Bộ nhập địa chỉ**
+
+**- Spam Filters**: Bộ lọc thư rác
+
+**- Mã hóa**: Mã hóa thư
+
+**- BoxTrapper**: Bảo vệ hộp thư đến khỏi thư rác bằng cách yêu cầu người gửi email không nằm trong Danh Sách Trắng trả lời email xác minh trước khi bạn nhận thư của họ.
+
+**- Lịch và danh bạ**
+
+**- Email Disk Usage**
+
+## Tệp
+
+**- Quản lý tệp**
+
+<img src="img/31.png">
+<img src="img/32.png">
+
+**- Hình ảnh**
+
+**- Bảo mật thư mục**: Thiết lập bảo mật cho các thư mục tùy nhu cầu
+
+<img src="img/53.png">
+
+**- Mức dùng ổ đĩa**: Hiển thị dung lượng các thư mục
+
+**- Đĩa Web**
+
+**- Sao lưu**
 
 Có thể full backup hoặc backup từng phần như backup thư mục, cơ sở dữ liệu, mail,..
 
@@ -217,26 +308,53 @@ Sau khi hoàn tất quá trình backup sẽ có thông báo được gửi tới
 
 <img src="img/30.png">
 
-## Quản lý tệp
 
-<img src="img/31.png">
-<img src="img/32.png">
+**- Trình hướng dẫn sao lưu**: Sao lưu hoặc khôi phục dữ liệu
 
-## Tạo SubDomain
+<img src="img/54.png">
+
+## Cơ sở dữ liệu
+
+Gồm các trình quản lý cơ sở dữ liệu, tạo sửa xóa các database
+
+## Miền
+
+**- WordPress Toolkit**: Quản lý cài đặt WordPress
+
+<img src="img/55.png">
+
+**- Site Publisher**: Sử dụng giao diện này để tạo nhanh một trang web từ tập hợp các mẫu có sẵn.
+
+**- Miền**: Quản lý miền
+
+**- Miền khác**: Tạo miền khác
+
+**- Miền con**: Tạo các subdomain
 
 <img src="img/33.png">
 
 <img src="img/34.png">
 
-## Đổi version PHP
+**- Bí danh**: Tạo CName
 
-Tại Software => MultiPHP Manager
+**- Chuyển hướng**: Chuyển hướng Website tới địa chỉ URL tùy ý
 
-<img src="img/35.png">
+<img src="img/56.png">
 
-<img src="img/36.png">
+**- Zone Editor**: Quản lý, cấu hình các bản ghi DNS
 
-## Cài đặt SSL
+**- Dynamic DNS**
+
+## Sơ đồ
+
+Nơi quản lý các sơ đồ lỗi, băng thông, truy cập thô, awstarts, thống kê Analog, Webalizer
+
+## Bảo mật
+
+**- Truy cập SSH**: Cho phép truyền tệp bảo mật và thông tin đăng nhập từ xa qua internet. Ở tùy chọn này có quản lý khóa SSH (Tạo hoặc nhập khóa SSH)
+
+**- SSL/TLS**
+**Cài đặt SSL**
 
 Để cài đặt chứng chỉ SSL cho Site thì cần có các file chứng chỉ được cung cấp bởi tổ chức CA tin cậy.
 
@@ -260,3 +378,35 @@ Sau khi cài đặt thành công sẽ có thông báo trả về
 
 <img src="img/41.png">
 <img src="img/42.png">
+
+Ta có thể xem trạng thái của SSL/TLS tại tùy chọn SSL/TLS Status
+
+<img src="img/57.png">
+
+<img src="img/58.png">
+
+## Phần mềm
+
+**Đổi version PHP**
+
+Tại tùy chọn phần mềm (Software) => MultiPHP Manager
+
+<img src="img/35.png">
+
+<img src="img/36.png">
+
+## Nâng cao
+
+Tại đây có thể tạo các Cron Jobs, theo dõi DNS, quản lý cấu hình các trang lỗi,...
+
+## Tùy chọn
+
+**- Password & Security**: Thiết lập, thay đổi mật khẩu cho Account Cpanel
+
+**- Đổi ngôn ngữ**: Thiết lập ngôn ngữ cho trang quản trị CPanel
+
+**- Đổi kiểu**: Thiết lập kiểu giao diện cho Cpanel
+
+**- Thông tin liên hệ**: Thiết lập liên hệ cảnh báo tới người quản trị
+
+**- User Manager**: Quản lý các User của Account CPanel
