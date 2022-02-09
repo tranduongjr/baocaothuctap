@@ -236,3 +236,27 @@ Tại Software => MultiPHP Manager
 
 <img src="img/36.png">
 
+## Cài đặt SSL
+
+Để cài đặt chứng chỉ SSL cho Site thì cần có các file chứng chỉ được cung cấp bởi tổ chức CA tin cậy.
+
+Tham khảo cách lấy chứng chỉ SSL tại: https://github.com/tranduongjr/baocaothuctap/blob/main/SSL/SSL%20tr%E1%BA%A3%20ph%C3%AD.md
+
+Để cài đặt SSL từ CPanel ta vào tùy chọn Bảo mật(Security) => SSL/TLS
+
+<img src="img/37.png">
+
+<img src="img/38.png">
+
+Tiến hành add các chứng chỉ tương ứng và click vào cài đặt chứng chỉ
+
+<img src="img/39.png">
+
+Sau khi cài đặt thành công sẽ có thông báo trả về
+
+<img src="img/40.png">
+
+Để sửa hoặc xóa chứng chỉ ta và tùy chọn như sau:
+
+<img src="img/41.png">
+<img src="img/42.png">
