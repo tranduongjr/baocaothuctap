@@ -77,4 +77,20 @@ Trang chủ của Plesk hiện ra
 
 <img src="img/9.png">
 
+**Thêm tên miền**
 
+<img src="img/12.png">
+
+<img src="img/13.png">
+
+Thông tin miền đã thêm được hiện ra
+
+<img src="img/14.png">
+
+**Tạo tài khoản người dùng**
+
+Vào tùy chọn người dùng và click vào Tạo tài khoản người dùng, sau đó nhập các thông tin tài khoản
+
+<img src="img/15.png">
+
+<img src="img/16.png">
