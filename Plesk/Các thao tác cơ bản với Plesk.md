@@ -52,7 +52,6 @@ Tại trang quản trị của khách hàng cũng gồm các tùy chọn
 - Thống kê: thống kê không gian đĩa đã sử dụng và lưu lượng đã sử dụng,...
 - Người dùng: Quản lý thông tin của khách hàng, có thể thay đổi thiết lập với tài khoản của khách hàng, tạo tài khoản người dùng,...
 - Tài khoản: nơi quản lý các thuê bao được quản lý bởi khách hàng.
-
 - WordPress: để tạo trang WordPress
 
 ## Đại lý
@@ -207,6 +206,19 @@ Trong đó có các tùy chọn để cấu hình cho site
 
 <img src="img/45.png">
 
-Để cấu hình SSL ta vào tùy chọn SSL/TLS:
+- Để cấu hình SSL ta vào tùy chọn SSL/TLS:
 
-Có tùy chọn cài đặt một chứng chỉ cơ bản miễn phí do Let's Encrypts cung cấp hoặc nếu ta muốn cài đặt chứng chỉ trả  phí từ nhà cung cấp tin cậy nào đó,ta cần tải lên tập .pem của chứng chỉ đó. Tham khảo cách tạo tập tin .pem từ chứng chỉ của nhà cung cấp tin cậy tại : 
+Có tùy chọn cài đặt một chứng chỉ cơ bản miễn phí do Let's Encrypts cung cấp hoặc nếu ta muốn cài đặt chứng chỉ trả  phí từ nhà cung cấp tin cậy nào đó,ta cần tải lên tập .pem của chứng chỉ đó. Tham khảo cách tạo tập tin .pem từ chứng chỉ của nhà cung cấp tin cậy tại : https://github.com/tranduongjr/baocaothuctap/blob/main/Plesk/t%E1%BA%A1o%20t%E1%BB%87p%20pem%20cert.md
+
+<img src="img/53.png">
+
+Kết quả sau khi cài đặt thành công:
+
+<img src="img/52.png">
+
+- Thay đổi versions PHP tại tùy chọn các thiết lập PHP
+- Xem log của site tại tùy chọn nhật ký
+- Các tùy chọn khác như kết nối FTP, bảo vệ các danh mục bằng mật khẩu
+- Trình quản lý tập tin và thư mục: có thể upload source, sao chép, di chuyển thư mục, lưu trữ (nén hoặc giải nén) hoặc gỡ bỏ tệp tin
+
+<img src="img/54.png">
