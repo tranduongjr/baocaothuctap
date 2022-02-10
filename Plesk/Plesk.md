@@ -45,4 +45,36 @@ Plesk liên tục làm mới và phát triển không ngừng để tối ưu ho
 
 # Cài đặt Plesk
 
+Tiến hành chạy lệnh:
+
+```
+sh <(curl https://autoinstall.plesk.com/one-click-installer || wget -O - https://autoinstall.plesk.com/one-click-installer)
+```
+
+Sau khi cài xong sẽ có thông báo cài đặt thành công:
+
+<img src="img/3.png">
+
+Truy cập vào trình duyệt với port 8880 hoặc 8443 và đăng nhâp với tài khoản root của vps, lựa chọn ngôn ngữ.
+
+<img src="img/4.png">
+
+Nhập thông tin cấu hình cho tài khoản, nhập mail đã đăng ký trước đó để lấy key, nhập key đã nhận được ở email và chấp nhận các điều khoản
+
+**Tham khảo cách lấy Key dùng thử tại**: https://github.com/tranduongjr/baocaothuctap/blob/main/Plesk/L%E1%BA%A5y%20key.md
+
+<img src="img/5.png">
+
+Tiến hành vào Plesk
+
+<img src="img/6.png">
+
+Chờ cài đặt hệ thống, và click vào Khám phá Plesk
+
+<img src="img/8.png">
+
+Trang chủ của Plesk hiện ra
+
+<img src="img/9.png">
+
 
