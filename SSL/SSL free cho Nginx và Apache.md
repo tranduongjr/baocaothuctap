@@ -42,7 +42,7 @@ EV là viết tắt của (Exented Validation). EV SSL chỉ dành cho các doan
 
 3. Chứng chỉ SSL Multi-domain
 
-Một chứng chỉ SSL Multi-domain hỗ trợ tát cả các loại tên miền và subdomain khác nhau. SSL Multi-domain được đề xuất cho người có nhiều tên miền và subdomain.
+Một chứng chỉ SSL Multi-domain hỗ trợ tất cả các loại tên miền và subdomain khác nhau. SSL Multi-domain được đề xuất cho người có nhiều tên miền và subdomain.
 
 4. UCC SSL
 
