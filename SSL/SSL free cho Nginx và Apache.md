@@ -92,7 +92,9 @@ Có 2 cách tạo SSL:
 
 Người dùng sẽ nhận được một email xác thực tương ứng với email đăng ký SSL, Email sẽ chứa một mã xác thực và một liên kết. Nhấp vào liên kết và nhập mã xác thực để xác nhận việc sở hữu tên miền
 
-2. Xác thực bằng DNS CName-Based: Nhà cung cấp sẽ gửi cho khách hàng nội dung một record CName để khách hàng cấu hình bản ghi CName trên hệ thống DNS domain và sau đó xác nhận lại với nhà cung cấp để nhà cung cấp kiểm tra và tiến hành cấp chứng chỉ SSL
+2. Xác thực bằng DNS CName-Based 
+
+Nhà cung cấp sẽ gửi cho khách hàng nội dung một record CName để khách hàng cấu hình bản ghi CName trên hệ thống DNS domain và sau đó xác nhận lại với nhà cung cấp để nhà cung cấp kiểm tra và tiến hành cấp chứng chỉ SSL
 
 3. HTTP-based
 
