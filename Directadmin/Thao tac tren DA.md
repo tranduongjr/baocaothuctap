@@ -174,7 +174,7 @@ Hiển thị thông tin của hệ thống
 
 <img src="img/42.png">
 
-## User
+## 2. User
 
 ### Account Manager
 
