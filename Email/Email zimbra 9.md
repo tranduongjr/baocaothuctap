@@ -231,5 +231,5 @@ https://mail.tranduongjr.com:7071
 
 Đăng nhập với tài khoản admin và mật khẩu đã tạo bên trên để vào trang quản trị Mail Server
 
-
-
+<img src="img/12.png">
+<img src="img/13.png">
