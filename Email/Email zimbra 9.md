@@ -233,3 +233,53 @@ https://mail.tranduongjr.com:7071
 
 <img src="img/12.png">
 <img src="img/13.png">
+
+- Đảm bảo đầy đủ các bản ghi MX, PTR, SPF, DKIM, DMARC
+
++ Thêm bản ghi A: Tên mail loại bản A giá trị 103.176.179.51
+
++ Thêm bản ghi MX: Tên @ loại bản ghi MX giá trị mail.tranduongjr.com
+
++ Thêm bản ghi _dmarc: _dmarc loại bản ghi txt giá trị v=DMARC1; p=none; rua=mailto:mailauth-reports@mail.tranduongjr.com
+
++ Thêm bản ghi SPF: @ loại bản ghi txt giá trị v=spf1 +a +mx +ip4:103.176.179.51 ~all
+
+<img src="img/14.png">
+
++ Thêm bản ghi DKIM các thông số lấy từ email server
+
+Active DKIM cho mail.tranduongjr.com
+
+```
+su - zimbra
+
+/opt/zimbra/libexec/zmdkimkeyutil -a -d mail.tranduongjr.com
+```
+
+<img src="img/15.png">
+
+Get DKIM record
+
+```
+/opt/zimbra/libexec/zmdkimkeyutil -q -d mail.tranduongjr.com
+```
+
+<img src="img/16.png">
+
+```
+DKIM Public signature:
+86E8B388-8E05-11EC-9D81-5BE5C4F88AA3._domainkey IN      TXT     ( "v=DKIM1; k=rsa; "
+          "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt/aY65IYm5hrQ7Xau24HVnheMTSdTtQ+Ce0G+aqIjuPGb2d9DW4mYUdco2mp7/8P4zdLGEpYOznZGXTHuJrCCEEhYeGEdTj7iP+/COayNNUygswACGwRVaU7dU8L0KTIbHz7eGTvHNlFUwc3hXU3KTfn7tHM2ZG86/wbTVfbGGdbZ/7Qcb9cUhAer6PtY8FvIRk7LSN7AihnT4"
+          "+A4o9vjQvwp4KZwQuKM1DE6QlJCqyXeWQt6qPfpEeSe+HIfmhRLJq+VAfSvIOQZHj/fXemTBVf+NCR6CMq4CAcsojDMlVIKPlrT+Bn/74elWqIQEhuJ42pxtIGJKU9BXcY7H9sKwIDAQAB" )  ; ----- DKIM key 86E8B388-8E05-11EC-9D81-5BE5C4F88AA3 for mail.tranduongjr.com
+```
+
+Bản ghi DKIM tên ```86E8B388-8E05-11EC-9D81-5BE5C4F88AA3._domainkey``` loại bản ghi TXT và giá trị:
+
+```
+"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt/aY65IYm5hrQ7Xau24HVnheMTSdTtQ+Ce0G+aqIjuPGb2d9DW4mYUdco2mp78P4zdLGEpYOznZGXTHuJrCCEEhYeGEdTj7iP+/COayNNUygswACGwRVaU7dU8L0KTIbHz7eGTvHNlFUwc3hXU3KTfn7tHM2ZG86/wbTVfbGGdbZ/7Qcb9cUhAer6PtY8FvIRk7LSN7AihnT4+A4o9vjQvwp4KZwQuKM1DE6QlJCqyXeWQt6qPfpEeSe+HIfmhRLJq+VAfSvIOQZHj/fXemTBVf+NCR6CMq4CAcsojDMlVIKPlrT+Bn/74elWqIQEhuJ42pxtIGJKU9BXcY7H9sKwIDAQAB"
+```
+
+Kiểm tra gửi thư tới gmail
+
+<img src="img/20.png">
+<img src="img/21.png">
