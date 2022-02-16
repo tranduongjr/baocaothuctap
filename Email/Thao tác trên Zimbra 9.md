@@ -181,3 +181,7 @@ Vào Tùy chọn => Thư , nhập email muốn nhận bản thư chuyển tiếp
 - Thiết lập chữ ký
 
 <img src="img/64.png">
+
+- Kiểm tra
+
+<img src="img/65.png">
