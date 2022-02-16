@@ -49,8 +49,19 @@ Việc kiểm tra log gửi/nhận của email server zimbra là rất cần thi
 **Đường dẫn file log**
 
 ```
-/var/log/maillog
+/var/log/zimbra.log
 ```
+
+**- Chu trình gửi thư**:
+
+Khi click gửi thư => connect tới email server => MTA kiểm tra địa chỉ người nhận => Kiểm tra qua các rule filter, đánh giá spam, virus => Xếp vào queue(queue active) => Gửi thư => Xóa khỏi queue => Thông báo Message accepted for delivery
+
+<img src="img/57.png">
+
+Chu trình nhận: Chấp nhận kết nối từ email server gửi => Kiểm tra qua các rule filter, đánh giá spam, virus => Xếp vào queue (queue active) => Nhận thư và xóa khỏi queue => Thông báo nhận thư (Delivery OK)
+
+<img src="img/58.png">
+
 
 ### Đổi mật khẩu account admin zimbra
 
