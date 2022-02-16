@@ -157,7 +157,7 @@ Sau đó lưu lại cấu hình
 
 ### Thiết lập Forward email zimbra
 
-- Login vào webmail user
+- Login vào web mail user
 
 <img src="img/60.png">
 
@@ -171,3 +171,13 @@ Vào Tùy chọn => Thư , nhập email muốn nhận bản thư chuyển tiếp
 
 <img src="img/63.png">
 <img src="img/62.png">
+
+### Thiết lập chữ ký email zimbra
+
+- Login vào web mail user
+
+<img src="img/60.png">
+
+- Thiết lập chữ ký
+
+<img src="img/64.png">
