@@ -154,3 +154,20 @@ Tìm đến Tùy chọn thư rác
 Sau đó lưu lại cấu hình
 
 <img src="img/40.png">
+
+### Thiết lập Forward email zimbra
+
+- Login vào webmail user
+
+<img src="img/60.png">
+
+- Thiết lập Forward:
+
+Vào Tùy chọn => Thư , nhập email muốn nhận bản thư chuyển tiếp và lưu lại cấu hình
+
+<img src="img/61.png">
+
+- Kiểm tra:
+
+<img src="img/63.png">
+<img src="img/62.png">
