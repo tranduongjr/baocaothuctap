@@ -62,6 +62,21 @@ Chu trình nhận: Chấp nhận kết nối từ email server gửi => Kiểm t
 
 <img src="img/58.png">
 
+### Thay đổi domain.
+
+```
+su zimbra
+
+zmprov -l rd <domain cũ> <domain mới>
+```
+
+Ví dụ:
+
+```
+su zimbra
+
+zmprov -l rd mail.tranduongjr.com tranduongjr.com
+```
 
 ### Đổi mật khẩu account admin zimbra
 
@@ -185,3 +200,14 @@ Vào Tùy chọn => Thư , nhập email muốn nhận bản thư chuyển tiếp
 - Kiểm tra
 
 <img src="img/65.png">
+
+### Thiết lập danh sách gửi thư
+
+List mail là tài khoản email chứa các email con để khi ta soạn thư gửi cho list này, nó sẽ tiến hành gửi thư cho tất cả các mail con trong list đó.
+
+Tại trang quản trị của mail server zimbra vào tùy chọn Quản lý => Các danh sách gửi thư và tiến hành tạo danh sách gửi thư.
+
+<img src="img/66.png">
+
+### Bakup/Restore
+
