@@ -233,3 +233,28 @@ Tại trang web mail zimbra => Tùy chọn => Nhập/Xuất
 
 <img src="img/71.png">
 
+### Tìm ID mailbox account trong email zimbra
+
+Mỗi account email trong email server zimbra được đại diện bởi một ID, tuy nhiên ID này sinh ra không theo thứ tự từ nhỏ đến lớn mà sinh ngẫu nhiên. Việc tìm được chính xác tài khoản email nào có ID mailbox là bao nhiêu có thể ứng dụng trong trường hợp restore lại mailbox của một account nào đó.
+
+* Đường dẫn mailbox
+
+```
+/opt/zimbra/store/0/
+```
+* Tìm ID mailbox từ account email
+
+```
+su zimbra
+
+zmprov getMailboxInfo <tên email muốn tìm ID>
+```
+
+Ví dụ:
+
+```
+su zimbra
+zmprov getMailboxInfo admin@tranduongjr.com
+```
+
+<img src="img/76.png">
