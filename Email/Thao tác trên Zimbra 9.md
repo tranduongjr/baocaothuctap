@@ -78,6 +78,24 @@ su zimbra
 zmprov -l rd mail.tranduongjr.com tranduongjr.com
 ```
 
+### Thêm domain
+
+Tại trang quản trị mail server zimbra vào tùy chọn Tạo tên miền
+
+<img src="img/67.png">
+
+Tiến hành ghi các thông tin để tạo domain
+
+<img src="img/68.png">
+
+Chọn máy chủ thư và có thể click vào kế tiếp để tiếp tục cấu hình hoặc chọn click hoàn tất (các cấu hình để mặc định)
+
+<img src="img/69.png">
+
+Để quản lý, thêm, sửa, xóa miền nào đó ta có thể thực hiện tại tùy chọn Cấu Hình => Tên miền
+
+<img src="img/70.png">
+
 ### Đổi mật khẩu account admin zimbra
 
 Khi cài đặt email server zimbra mặc định sinh ra một account admin có toàn quyền quản trị trên hệ thống email server. Tuy nhiên trong quá trình vận hành sử dụng người quản trị không nhớ được mật khẩu admin nên phải thực hiện thao tác reset password account admin zimbra.
@@ -209,5 +227,9 @@ Tại trang quản trị của mail server zimbra vào tùy chọn Quản lý =>
 
 <img src="img/66.png">
 
-### Bakup/Restore
+### Bakup/Restore dữ liệu của mail user
+
+Tại trang web mail zimbra => Tùy chọn => Nhập/Xuất
+
+<img src="img/71.png">
 
