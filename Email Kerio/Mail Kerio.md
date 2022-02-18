@@ -351,4 +351,23 @@ Chọn Enable attachment filter(Bật bộ lọc tệp đính kèm)
 
 Nơi lưu trữ logs
 
+- Log config: Lưu lại toàn bộ các thay đổi trên server Log config có 3 loại:
+* Lưu lại các thông tin đăng nhập trang quản trị kerio-connect
+* Lưu lại các thông tin thay đổi cấu hình trên database, nói cách khác là thay đổi cấu hình của user có liên quan đến database.
+* Những thay đổi khác trong cấu hình
 
+- Log Debug: Sử dụng để giám sát các loại thông tin nhất định, theo mặc định nó sẽ hiển thị các thông tin liên quan đến khởi động và dừng các dịch vụ, giao thức trên Mail server Kerio-connect. Liệt kê các dịch vụ và port kết nối phục vụ cho quá trình vận hành của Mail server và các thông tin khác mô tả các quá trình xử lý của mail server.
+
+- Log Mail: Ghi chép lại toàn bộ các tiến trình xử lý Email bao gồm gửi, nhận thư.
+
+- Log Opereations: Lưu lại những thay đổi như xóa và di chuyển các (Email, danh ba, sự kiện, nhiệm vụ và ghi chú) trong hộp thư của người dùng. Trong trường hợp các email bị đánh dấu spam và chúng được di chuyển vào hòm thư spam và cũng được lưu lại ở log này.
+
+- Log Security:
+* Phát hiện virus hay file đính kèm không an toàn (Viruses and forbidden attachments detected)
+* Ghi chú những lần đăng nhập không thành công (Failed login attempts)
+
+- Log Spam: Hiển thị các mail bị báo cáo là Spam hoặc được đánh dấu là Spam
+
+- Log Warning: Các cảnh báo đối với hệ thống
+
+- Log Audit: Nơi ghi lại thông tin về người đăng nhập 
