@@ -11,6 +11,7 @@
 <img src="img/4.png">
 
 Tích vào Web Server(IIS)
+
 <img src="img/5.png">
 
 Add Feature sau đó để các mặc định và tiếp tục chọn Next
