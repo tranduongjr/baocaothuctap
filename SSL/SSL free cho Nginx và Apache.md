@@ -63,7 +63,7 @@ Trong mã hóa khóa đối xứng thì chỉ có một khóa có sẵn cho cả
 
 SSL sử dụng cả mã hóa bất đối xứng và mã hóa đối xứng để truyền dữ liệu một cách an toàn
 
-## Cách truyền dữ liệu quá SSL
+## Cách truyền dữ liệu qua SSL
 
 Giao tiếp giữa máy chủ và máy khách được ví như bắt đầu bằng một cái bắt tay. khi bắt đầu, trình duyệt cố gắng giao tiếp với máy chủ web. Trong SSL sự bắt đầu này sử dụng mã hóa khóa bất đối xứng. Khi bắt đầu :
 
