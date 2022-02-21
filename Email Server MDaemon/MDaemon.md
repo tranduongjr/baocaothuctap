@@ -103,7 +103,7 @@ Người dùng cũng có thể vào trang quản trị mail của mình tại c�
 
 <img src="img/14.png">
 
-<img src="img/15.png">
+<img src="img/18.png">
 
 Để sử dụng mail người dùng, cần có ứng dụng hỗ trợ mail người dùng như Outlook, Thunderbird,...  hoặc có thể truy cập theo cổng 3000
 
