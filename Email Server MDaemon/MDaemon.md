@@ -57,3 +57,59 @@ IIS là một dịch vụ Internet đi kèm với phiên bản Windows Server s�
 
 - Sau khi tải về xong nhấn vào file.exe để chạy phần mềm MDaemon Mail Server. Tại màn hình giới thiệu nhấn Next => I Agree để đồng ý điều khoản.
 
+<img src="img/3.png">
+
+Click vào I Agree để đồng ý các điều khoản để cài đặt
+
+<img src="img/4.png">
+
+Tiếp đến chọn nơi cài đặt
+
+<img src="img/5.png">
+
+Nếu có key thì có thể nhập key luôn, nếu không thì chọn Free Trial sau đó Next
+
+<img src="img/6.png">
+
+Tiếp theo cần nhập một số thông tin như tê, tên công ty, quốc gia, địa chỉ email, số điện thoại,... Sau đó nhấn Next
+
+<img src="img/7.png">
+
+Một Trial key sẽ được gửi về mail đã nhập bước trước đó. Dùng key đó để nhập vào và click vào Next
+
+<img src="img/8.png">
+
+Chờ đợi quá trình cài đặt
+
+<img src="img/9.png">
+
+Setup domain
+
+<img src="img/10.png">
+
+Setup 1 email admin để quản lý Server
+
+<img src="img/11.png">
+
+Giao diện chính của quản lý Mail Server MDaemon
+
+<img src="img/12.png">
+
+Các mục tạo tài khoản, chỉnh sửa, cấu hình, quản lý tài khoản ở trong Tùy chọn Account
+
+<img src="img/13.png">
+
+Người dùng cũng có thể vào trang quản trị mail của mình tại cổng 1000
+
+<img src="img/14.png">
+
+<img src="img/15.png">
+
+Để sử dụng mail người dùng, cần có ứng dụng hỗ trợ mail người dùng như Outlook, Thunderbird,...  hoặc có thể truy cập theo cổng 3000
+
+
+<img src="img/17.png">
+
+<img src="img/16.png">
+
+Các tùy chọn cấu hình đối với mail người dùng sẽ tùy vào ứng dụng mail client được sử dụng
