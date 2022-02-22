@@ -118,3 +118,58 @@ Trong ví dụ trên, tên miền tranduongjr.com sẽ được quản lý bởi
 PTR (point) Record có thể nói là 1 DNS record ngược lại với A record. Nó chuyển đổi từ địa chỉ IP sang tên miền. Bản ghi PTR giúp xác thực IP của các hostname gửi tới, giúp hạn chế spam mail.
 
 Ngoài 6 loại record trên vẫn còn các loại bản ghi DNS khác ít phổ biến như SOA record, SRV record, APL record, CAA record, NAPTR record,... 
+
+# Cài đặt DNS Server
+
+## Chuẩn bị
+
+- 1 máy Server chạy hệ điều hành Windows Server 2012
+
+## Cài đặt
+
+- Truy cập vào Windows Server 2012 chọn Server Manager => Add Roles and Features để cài DNS Server
+
+<img src="img/1.png">
+
+- Để mặc định chọn Next và tới tùy chọn Server Roles ta tích chọn vào DNS Server và chọn Next
+
+<img src="img/2.png">
+
+- Nhấn next để tiếp túc cài đặt và nhấn Install. Sau đó Close để kết thúc quá trình cài đặt.
+
+- Để cài đặt cấu hình cho DNS Server. Ta truy cập vào Server Manager và chọn Tools => DNS
+
+<img src="img/3.png">
+
+- Trước khi tạo ra các bản ghi DNS, chúng ta nên tạo ra 1 Zone Reverse Lookup Zone để hệ thống tự tạo bản ghi phân giải ngược cho chúng ta. 
+
+<img src="img/4.png">
+
+Để mặc định và chọn Next
+
+<img src="img/5.png">
+
+IPv4 Reverse Lookup Zone
+
+<img src="img/6.png">
+
+Điền dải địa chỉ của máy đang cài DNS Server
+
+<img src="img/7.png">
+
+Để mặc định và chọn Next
+
+<img src="img/8.png">
+
+Click chọn allow both nonsecure and secure dynamic update để có thể cập nhật
+
+<img src="img/9.png">
+
+Finish để hoàn tất quá trình cài bản ghi phân giải ngược
+
+<img src="img/10.png">
+
+Các bản ghi của các tên miền sẽ được cấu hình tại Forward Lookup Zones
+
+<img src="img/11.png">
+
