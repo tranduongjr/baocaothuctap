@@ -1,3 +1,33 @@
+# Giới thiệu về VPN
+
+## Mạng riêng ảo VPN là gì?
+
+VPN là mạng riêng ảo, Virtual Private Network, là một công nghệ mạng giúp tạo kết nối mạng an toàn khi tham gia vào mạng công cộng như Internet hoặc mạng riêng do một nhà cung cấp dịch vụ sở hữu. Công nghệ VPN để cho phép người dùng từ xa kết nối an toàn đến mạng riêng của cơ quan mình.
+
+## Cách thức hoạt động của VPN
+
+Khi kết nối máy tính (hoặc các thiết bị khác như điện thoại thông minh hoặc máy tính bảng) với VPN, máy tính sẽ hoạt động như thể một kết nối cục bộ như VPN. Tất cả lưu lượng mạng sẽ được gửi thông qua một kết nối an toàn đến VPN. Và bởi vì máy tính hoạt động trên hệ thống mạng này, điều này cho phép người dùng truy cập nguồn tài nguyên mạng cục bộ từ xa.
+
+Ngoài ra người dùng cũng có thể sử dụng Internet giống như thể họ đang hiện diện tại vị trí của VPN. Điều này có lợi trong một số trường hợp nếu bạn đang sử dụng Wifi công cộng hoặc muốn truy cập các trang web bị chặn về mặt địa lý.
+
+## Ưu điểm và nhược điểm của VPN
+
+**1. Ưu điểm**
+
+- Lưu lượng cá nhân được mã hóa và truyền an toàn qua Internet. Điều này giúp tránh xa khỏi các mối đe dọa trên Internet.
+
+- VPN khiến tin tặc gặp khó khăn khi xâm nhập hay gây trở ngại tới công việc của cá nhân hoặc doanh nghiệp.
+
+- Người dùng có thể yên tâm sử dụng Wifi công cộng và không phải lo nghĩ về những tên tin tặc, đồng thời có thể an toàn kết nối từ xa với máy chủ.
+
+- Với trình bảo mật cao như vậy, người dùng hoàn toàn có thể ẩn danh khi lướt web. Không những thế, đa số các VPN còn có giao diện rất dễ cấu hình, những người không rành công nghệ cũng có thể thao tác được.
+
+**2. Nhược điểm**
+
+- Nhiều trang web trực tuyến đang trở nên cảnh giác với VPN và tạo ra nhiều trở ngại nhằm ngăn cản hay giảm lượng truy cập vào nội dung bị hạn chế.
+
+- Không may là người dùng cũng có thể sử dụng VPN vào các hoạt động bất hợp pháp, khiến công nghệ này bị mang tiếng xấu.
+
 # Cấu hình OpenVPN trên Centos 7
 
 Bảo mật an toàn thông tin là một trong những yếu tố quan trọng nhất trên môi trường Internet. Nếu hệ thống máy tính có lỗ hổng bảo mật, hacker bên ngoài có thể truy cập và điểu khiển traffic từ máy tính và website. Và đó cũng là lí do mà VPN ra đời. VPN, tên đầy đủ là Virtual Private Network, là phương thức kết nối máy tính từ xa vào mạng LAN an toàn và bảo mật.
@@ -265,3 +295,21 @@ Khởi chạy OpenVPN :
 systemctl start openvpn@server.service
 ```
 
+## Kết nối OpenVPN
+
+1. Cài đặt OpenVPN Client
+
+- Cài đặt gói Epel Repo
+
+```
+yum install epel-release -y
+```
+
+- Cài đặt OpenVPN
+
+```
+yum install openvpn -y
+```
+
+
+ 
