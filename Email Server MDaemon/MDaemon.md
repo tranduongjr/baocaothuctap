@@ -51,7 +51,7 @@ IIS là một dịch vụ Internet đi kèm với phiên bản Windows Server s�
 
 <img src="img/2.png">
 
-- Nhấn Next ở cả 3 mục tiếp theo và để cấu hình mặc định của phaafnmeefm là được. Sau đó nhấn Install để bắt đầu cài đặt
+- Nhấn Next ở cả 3 mục tiếp theo và để cấu hình mặc định của phần mềm là được. Sau đó nhấn Install để bắt đầu cài đặt
 
 ### Cài đặt phần mềm MDaemon Mail Server
 
